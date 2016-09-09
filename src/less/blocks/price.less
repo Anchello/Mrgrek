@@ -1,0 +1,37 @@
+.price-table {
+  width: 500px;
+  font-family: @font-family-bebas;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: @letter-spacing;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 17px 0;
+    align-items: baseline;
+  }
+
+  &__cell {
+    flex: 0 0 auto;
+    max-width: 400px;
+  }
+}
+
+.price {
+  font-size: 18px;
+  font-family: @font-family-bebas;
+  font-weight: 700;
+  letter-spacing: @letter-spacing;
+
+  .wallet {
+    font-size: 12px;
+  }
+}
+
+.price-dots {
+  display: inline-block;
+  border-bottom: 2px dotted @light_silver;
+  flex-grow: 25;
+  margin: 0 2px;
+}

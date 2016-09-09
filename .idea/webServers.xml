@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2fd182f5-689c-4464-bd82-f2ee255453bb" name="Mrgrek2" url="http://5.101.152.130">
+        <fileTransfer host="5.101.152.130" port="21" rootFolder="/dev.borodaboroda.com/public_html/mrgrek-new" password="df80dffedf93dff7df89df8bdfcfdf80" username="sic4bu_ann">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

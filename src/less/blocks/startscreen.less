@@ -1,0 +1,33 @@
+.startscreen {
+  //background-repeat: no-repeat;
+  //background-position: 50% 0;
+  //background-size: 100% 753px;
+  position: relative;
+
+  &::before {
+    content: '';
+    height: 75%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background: url(../img/start_bg.jpg) no-repeat center / cover;
+  }
+}
+
+@media all and (max-width: @screen-md) {
+  .startscreen {
+    &::before {
+      height: 73%;
+    }
+  }
+}
+
+@media all and (max-width: @screen-sm) {
+  .startscreen {
+    &::before {
+      height: 60%;
+    }
+  }
+}

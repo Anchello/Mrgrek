@@ -1,0 +1,60 @@
+.news {
+  padding-top: 50px;
+}
+
+.news__title {
+  text-align: center;
+  color: @white;
+  text-align: center;
+}
+
+.news__wrapper {
+  .row;
+  padding: 45px 0;
+  //position: relative;
+}
+
+.news-slider {
+  .col (xs, 10);
+
+  &__item {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 35px;
+  }
+
+  &__data {
+    font-size: 16px;
+    font-family: @font-family-bebas;
+    letter-spacing: @letter-spacing;
+    font-weight: 300;
+  }
+
+  &__subtitle {
+    margin: 5px 0 30px;
+  }
+
+  &__btn {
+    .col (xs, 1);
+    position: relative;
+    top: 60px;
+    height: 50px;
+    cursor: pointer;
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+
+    .material-icons {
+      font-size: 60px;
+      color: @light_gray;
+    }
+  }
+}
+
+

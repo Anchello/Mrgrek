@@ -1,0 +1,45 @@
+.promo {
+  .row;
+  justify-content: center;
+  color: @white;
+  padding-top: 120px;
+  padding-bottom: 48px;
+
+  &__title {
+    .col (xl, 10);
+    text-align: center;
+    position: relative;
+    margin: 0 0 63px;
+
+    &::before {
+      content: '';
+
+      height: 2px;
+      width: 310px;
+      position: absolute;
+      background: @red;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__text {
+    .col (xl, 6);
+    font-size: 30px;
+    font-family: @font-family-bebas;
+    text-transform: uppercase;
+    letter-spacing: @letter-spacing;
+    margin-bottom: 108px;
+  }
+
+  &__btn {
+    .col (xl, 12);
+    text-align: center;
+
+    .button {
+      margin: 12px 24px;
+    }
+  }
+}
+
