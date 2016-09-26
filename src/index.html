@@ -22,120 +22,217 @@
   <meta name="theme-color" content="#6b131c">
   <meta name="msapplication-navbutton-color" content="#6b131c">
 
-  <!--<link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96.png">-->
-  <!--<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">-->
-  <!--<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">-->
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
 
-  <!--<link rel="icon" sizes="192x192" href="icons/android-icon-192.png">-->
-  <!--<link rel="icon" sizes="128x128" href="icons/android-icon-128.png">-->
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
 
-  <!--<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152.png">-->
-  <!--<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144.png">-->
-  <!--<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120.png">-->
-  <!--<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114.png">-->
-  <!--<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76.png">-->
-  <!--<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72.png">-->
-  <!--<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60.png">-->
-  <!--<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57.png">-->
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
 
   <meta name="msapplication-TileColor" content="#6b131c">
-  <!--<meta name="msapplication-TileImage" content="icons/msapp-150.png">-->
-  <!--<meta name="msapplication-config" content="browserconfig.html">-->
-
-
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="msapplication-config" content="browserconfig.html">
 
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/font.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
-  <!--<link href="less/style.less" rel="stylesheet/less" type="text/css">-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>-->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!--<script src="https://use.fontawesome.com/da01d10ace.js"></script>-->
+  <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+
+  <script src="js/vendor/hammer.min.js"></script>
+  <script src="js/vendor/hammer-time.min.js"></script>
+  <script src="js/vendor/jquery.hammer.js"></script>
+  <script src="js/assist.js"></script>
+  <script src="js/jquery.map.js"></script>
+  <script src="js/jquery.startscreen.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/jquery.service_tab.js"></script>
+  <script src="js/jquery.tabs.js"></script>
+  <script src="js/jquery.modal.js"></script>
+  <script src="js/jquery.carousel.js"></script>
+  <script src="js/jquery.dropdown.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/jquery.page-nav.js"></script>
 
 </head>
 <body>
   <div class="page__wrapper">
-    <header class="header">
+
+    <div class="page-nav">
+      <ul class="page-nav__list">
+        <li class="page-nav__item"><a href="#header" class="page-nav__link page-nav__link--current scroll-to">Главная<span class="page-nav__circle"></span></a></li>
+        <li class="page-nav__item"><a href="#services" class="page-nav__link scroll-to">Услуги<span class="page-nav__circle"></span></a></li>
+        <li class="page-nav__item"><a href="#partners" class="page-nav__link scroll-to">Партнеры<span class="page-nav__circle"></span></a></li>
+        <li class="page-nav__item"><a href="#cosmetics" class="page-nav__link scroll-to">Косметика<span class="page-nav__circle"></span></a></li>
+        <li class="page-nav__item"><a href="#instagram" class="page-nav__link scroll-to">Инстаграм<span class="page-nav__circle"></span></a></li>
+        <li class="page-nav__item"><a href="#contacts" class="page-nav__link scroll-to">Контакты<span class="page-nav__circle"></span></a></li>
+      </ul>
+    </div>
+
+    <div class="modal-overlay">
+      <div class="modal-overlay__substrate"></div>
+
+      <div class="modal modal--callback">
+        <span class="modal__close">Закрыть
+            <i class="material-icons">clear</i>
+        </span>
+
+        <div class="modal__wrapper">
+          <img class="modal__logo" src="svg/logo_black.svg">
+
+          <p class="modal__text -nomargin">Отправьте заявку и наш администратор свяжется с вами в ближайшее!</p>
+
+          <form class="modal__form ajax-form" action="">
+            <input type="text" class="textfield" name="name" placeholder="Ваше имя">
+
+
+            <input type="tel" class="textfield" name="tel" placeholder="Ваш телефон">
+
+            <button type="submit" class="button">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-menu__close">
+      <span class="icon icon--arrow-back" ></span>
+    </div>
+
+    <div class="mobile-menu">
+      <nav class="mobile-nav">
+        <div class="container">
+          <ul class="mobile-nav__sublist">
+            <li class="mobile-nav__subitem mobile-nav__subitem--back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+            <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
+            <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
+            <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
+            <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
+            <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
+            <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
+            <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
+            <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
+          </ul>
+
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
+            <li class="mobile-nav__item mobile-nav__item--more">
+              <a class="mobile-nav__link mobile-nav__link--more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
+            </li>
+            <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
+            <li class="mobile-nav__item"><a href="service.html" class="mobile-nav__link">Услуги</a></li>
+            <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mobile-nav__contact">
+        <div class="container">
+          <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+          <span class="contact__address">ул. Кораблестроителей д.14,</span>
+          <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+        </div>
+      </div>
+    </div>
+
+    <header class="header" id="header">
       <div class="container">
         <div class="header__row">
           <div class="header__logo">
             <a href="index.html" class="main-logo">
-              <img src="img/logo.png"></img>
+              <img src="svg/logo_white.svg">
             </a>
           </div>
 
           <nav class="header-nav">
             <ul class="header-nav__list">
               <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
-              <li class="header-nav__item">
-                <a href="" class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
+              <li class="header-nav__item header-nav__item--more">
+                <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
 
-                <ul class="header-nav__sublist">
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">О проекте</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">О косметике</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">Галерея</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">Видеогалеря</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">Новости</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">Отзывы</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">На свадьбу</a></li>
-                  <li class="header-nav__subitem"><a href="" class="header-nav__link">Детям</a></li>
+                <ul class="header-nav__list header-nav__list--sub">
+                  <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
+                  <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
+                  <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
+                  <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
+                  <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
+                  <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
+                  <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
+                  <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
                 </ul>
               </li>
-              <li class="header-nav__item"><a href="" class="header-nav__link">Контакты</a></li>
-              <li class="header-nav__item"><a href="" class="header-nav__link">Услуги</a></li>
-              <li class="header-nav__item"><a href="" class="header-nav__link">Наша команда</a></li>
+              <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+              <li class="header-nav__item"><a href="service.html" class="header-nav__link">Услуги</a></li>
+              <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
             </ul>
           </nav>
 
           <div class="header-contact">
             <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
             <span class="contact__address">ул. Кораблестроителей д.14,</span>
-            <span class="contact__address">Петровская наб., д. 15</span>
+            <!--<span class="contact__address">Петровская наб., д. 15</span>-->
           </div>
 
-          <!--<span class="header__hamburger">-->
-                    <!--<i class="material-icons">dehaze</i>-->
-                <!--</span>-->
+          <div class="header__icon-menu">
+            <span class="icon icon--menu" ></span>
+          </div>
         </div>
       </div>
     </header>
-    
-    <div class="startscreen">
+
+    <div class="startscreen" id="main" style="background-image: url(img/start_bg.jpg);">
       <div class="container">
         <section class="promo">
-          <h1 class="promo__title">Стрижки, бритье, маникюр и педикюр Все только для мужчин!</h1>
+          <h1 class="promo__title line line--long">Стрижки, бритье, маникюр и педикюр Все только для мужчин!</h1>
 
           <div class="promo__text">Подстрижем, побреем, покормим и напоим. <br>
             Помоем вашу машину, почистим вашу обувь</div>
 
           <div class="promo__btn">
-            <span class="button button--white">Онлайн запись</span>
-            <span class="button">Обратный звонок</span>
+            <!--<span class="button button&#45;&#45;white ms_booking online_reg" data-url="http://w15819.yclients.com/">Онлайн запись</span>-->
+            <span class="button modal-button" data-modal="callback">Обратный звонок</span>
           </div>
 
         </section>
 
-        <section class="news">
-          <h2 class="news__title -nomargin">Новости и статьи</h2>
+        <section class="news-section">
+          <h2 class="news-section__title -nomargin">Новости и статьи</h2>
 
-          <div class="news__wrapper">
+          <div class="news-section__wrapper">
             <div class="news-slider__btn news-slider__btn--prev">
               <i class="material-icons">keyboard_arrow_left</i>
             </div>
 
             <div class="news-slider">
               <div class="news-slider__item">
-                <div class="news-slider__data"><time datetime="2016-07-15">15.07.2016</time></div>
+                <div class="news-slider__wrapper">
+                  <div class="news-slider__data"><time datetime="2016-07-15">15.07.2016</time></div>
 
-                <h6 class="news-slider__subtitle">Конкурс с рестораном Маймун от GINZA PROJECT</h6>
+                  <h6 class="news-slider__subtitle">Конкурс с рестораном Маймун от GINZA PROJECT</h6>
 
-                <p>Дарим подарочные сертификаты на 3000, 1500 и 1000 рублей! Ресторан «Маймун» совместно с мужским пространством Mr. Grek проводят конкурс «Мистер Маймун» на самую стильную бороду!</p>
+                  <div class="news-slider__content">
+                    <p>Дарим подарочные сертификаты на 3000, 1500 и 1000 рублей! Ресторан «Маймун» совместно с мужским пространством Mr. Grek проводят конкурс «Мистер Маймун» на самую стильную бороду</p>
+                  </div>
 
-                <div class="link__more">
-                  <a href="" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></i></a>
+                  <div class="link__more">
+                    <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                  </div>
                 </div>
+
               </div>
 
               <div class="news-slider__item">
@@ -143,10 +240,126 @@
 
                 <h6 class="news-slider__subtitle">Ручная экспресс чистка обуви в подарок!</h6>
 
-                <p>Добрый день, джентльмены! У нас для Вас замечательная новость! С 1 июня по 1 июля 2016 года всем Гостям, записавшимся к нам на услуги, мы предоставляем "ручную экспресс чистку обуви" в подарок!</p>
+                <div class="news-slider__content">
+                  <p>Добрый день, джентльмены! У нас для Вас замечательная новость! С 1 июня по 1 июля 2016 года всем Гостям, записавшимся к нам на услуги, мы предоставляем "ручную экспресс чистку обуви" в подарок!</p>
+                </div>
 
                 <div class="link__more">
-                  <a href="" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__wrapper">
+                  <div class="news-slider__data"><time datetime="2016-05-13">13.05.2016</time></div>
+
+                  <h6 class="news-slider__subtitle">19 мая празднуем свой маленький юбилей</h6>
+
+                  <div class="news-slider__content">
+                    <p>Джентельмены! 19 мая мужское пространство празднует свой маленький юбилей. В честь нашего дня рождения всех гостей, записавшихся предварительно на услуги наших мастеров, ждут приятные комплименты и процедуры.</p>
+                  </div>
+
+                  <div class="link__more">
+                    <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-29-04">29.04.2016</time></div>
+
+                <h6 class="news-slider__subtitle">Деловой Петербург о нас</h6>
+
+                <div class="news-slider__content">
+                  <p>Предприниматели Мария и Михаил Грек на волне моды на бороду решили открыть премиальную мужскую парикмахерскую, отстроившись от салонов, предоставляющих услуги для хипстеров.</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-04-22">22.04.2016</time></div>
+
+                <h6 class="news-slider__subtitle">Здесь бреют по-королевски!</h6>
+
+                <div class="news-slider__content">
+                  <p>Доброго времени суток, джентльмены! У нас для Вас замечательная новость! Вчера наши мастера прошли аттестацию в Привилегированном клубе Английского Королевского Бритья от Truefitt&Hill.</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-03-05">05.03.2016</time></div>
+
+                <h6 class="news-slider__subtitle">О нас пишут</h6>
+
+                <div class="news-slider__content">
+                  <p>Джентельмены! Читайте о нашем мужском пространстве Mr. Grek в апрельcком выпуске журнала Собака.ru и на сайте журнала в разделе "мода и красота".</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-03-24">24.03.2016</time></div>
+
+                <h6 class="news-slider__subtitle">Новая услуга</h6>
+
+                <div class="news-slider__content">
+                  <p>Джентльмены! У Нас есть замечательная новость! В преддверии сезона свадеб мы предлагаем женихам Джентльменский набор "Все включено"! У нас есть целый комплекс услуг,который завершит Ваш образ!</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-03-09">09.03.16</time></div>
+
+                <h6 class="news-slider__subtitle">Розыгрыш Apple watch!</h6>
+
+                <div class="news-slider__content">
+                  <p>Внимание! С 09.03.16 по 18.05.16 мы проводим розыгрыш, где главным призом будут Apple Watch Sport и поощрительные призы: косметика от Trufiit & Hill и сертификат от Mr. Grek на любую услугу!</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-02-20">20.02.2016</time></div>
+
+                <h6 class="news-slider__subtitle">Чистка обуви</h6>
+
+                <div class="news-slider__content">
+                  <p>Помните знаменитую фразу из легендарного советского кинофильма «Москва слезам не верит», когда главный герой произносит: «Я сам терпеть не могу грязную обувь!». Под этими словами может подписаться каждый мужчина...</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
+                </div>
+              </div>
+
+              <div class="news-slider__item">
+                <div class="news-slider__data"><time datetime="2016-02-19">19.02.2016</time></div>
+
+                <h6 class="news-slider__subtitle">Мы открылись</h6>
+
+                <div class="news-slider__content">
+                  <p>Мужское пространство Mr.Grek открыл свои двери 19 февраля! Это не просто спа-салон для мужчин, а настоящая мужская территория, где наши гости могут и заботиться о своей внешности, отдыхать, общаться, и параллельно делать ряд полезных вещей...</p>
+                </div>
+
+                <div class="link__more">
+                  <a href="news.html" class="-red">Читать<i class="material-icons">keyboard_arrow_right</i></a>
                 </div>
               </div>
             </div>
@@ -159,64 +372,522 @@
       </div>
     </div>
 
-    <section class="service-section">
+    <section class="service-section service-tab" id="services" style="background-image: url(img/service_bg.jpg);">
       <div class="container">
         <div class="service-section__row">
-          <h2 class="service-section__title">Наши услуги</h2>
+          <h2 class="service-section__title -nomargin-top line">Наши услуги</h2>
 
-          <div class="service__nav">
+          <div class="service-section__nav">
             <ul class="service__nav-list">
-              <li class="service__nav-item">Стрижки</li>
-              <li class="service__nav-item">Усы/Борода</li>
-              <li class="service__nav-item">Руки</li>
-              <li class="service__nav-item">Ноги</li>
-              <li class="service__nav-item">Джентельменский набор</li>
+              <li class="service__nav-item" data-tabs="hairstyle"><a class="service__nav-link -black">Стрижки</a></li>
+              <li class="service__nav-item" data-tabs="beard"><a class="service__nav-link -black">Усы/Борода</a></li>
+              <li class="service__nav-item" data-tabs="hands"><a class="service__nav-link -black">Руки</a></li>
+              <li class="service__nav-item" data-tabs="legs"><a class="service__nav-link -black">Ноги</a></li>
+              <li class="service__nav-item" data-tabs="set"><a class="service__nav-link -black">Джентельменский набор</a></li>
             </ul>
           </div>
 
-          <div class="service__slider">
-            <div class="service__wrapper">
-              <div class="service__content">
-                <div class="price-table">
-                  <div class="price-table__row">
-                    <span class="price-table__cell">Классическое бритье</span>
-                    <span class="price-table__cell price-dots"></span>
-                    <span class="price-table__cell price">1600<span class="wallet">руб.</span></span>
-                  </div>
+          <div class="service-section__slider service__wrapper">
+            <div class="service__slider-item service__slider-item--hairstyle">
+              <div class="table">
+                <div class="table__row">
+                  <span class="table__cell">Стрижка</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">2100<span class="wallet">руб.</span></span>
+                </div>
 
-                  <div class="price-table__row">
-                    <span class="price-table__cell">Королевское бритье</span>
-                    <span class="price-table__cell price-dots"></span>
-                    <span class="price-table__cell price">2500<span class="wallet">руб.</span></span>
-                  </div>
+                <div class="table__row">
+                  <span class="table__cell">Стрижка машинкой</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">1200<span class="wallet">руб.</span></span>
+                </div>
 
-                  <div class="price-table__row">
-                    <span class="price-table__cell">Моделирование бороды</span>
-                    <span class="price-table__cell price-dots"></span>
-                    <span class="price-table__cell price">1500<span class="wallet">руб.</span></span>
-                  </div>
+                <div class="table__row">
+                  <span class="table__cell">Бритье головы</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">1700<span class="wallet">руб.</span></span>
+                </div>
 
-                  <div class="price-table__row">
-                    <span class="price-table__cell">Окраска бороды</span>
-                    <span class="price-table__cell price-dots"></span>
-                    <span class="price-table__cell price">1000<span class="wallet">руб.</span></span>
-                  </div>
+                <div class="table__row">
+                  <span class="table__cell">Стрижка джентельмена до 12 лет</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">1200<span class="wallet">руб.</span></span>
+                </div>
 
-                  <div class="price-table__row">
-                    <span class="price-table__cell">Стрижка усов и бороды</span>
-                    <span class="price-table__cell price-dots"></span>
-                    <span class="price-table__cell price">1000<span class="wallet">руб.</span></span>
-                  </div>
+                <div class="table__row">
+                  <span class="table__cell">Окантовка</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">800<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Окраска волос</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">1500<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Укладка</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">1000/1500<span class="wallet">руб.</span></span>
+                </div>
+              </div>
+
+              <span class="button modal-button" data-modal="callback">Записаться</span>
+            </div>
+
+            <div class="service__slider-item service__slider-item--beard">
+            <div class="table">
+              <div class="table__row">
+                <span class="table__cell">Классическое бритье</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1600<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Королевское бритье</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">2500<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Моделирование бороды</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1500<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Окраска бороды</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1000<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Стрижка усов и бороды</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1000<span class="wallet">руб.</span></span>
+              </div>
+            </div>
+
+            <span class="button modal-button" data-modal="callback">Записаться</span>
+          </div>
+
+            <div class="service__slider-item service__slider-item--hands">
+            <div class="table">
+              <div class="table__row">
+                <span class="table__cell">Классический маникюр со SPA-уходом</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1300<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Европейский экспресс маникюр</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1000<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Аппаратный маникюр со SPA-уходом</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1500<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Массаж рук</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">500<span class="wallet">руб.</span></span>
+              </div>
+
+              <div class="table__row">
+                <span class="table__cell">Покрытие лечебным лаком</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">500<span class="wallet">руб.</span></span>
+              </div>
+            </div>
+
+            <span class="button modal-button" data-modal="callback">Записаться</span>
+          </div>
+
+            <div class="service__slider-item service__slider-item--legs">
+              <div class="table">
+                <div class="table__row">
+                  <span class="table__cell">Классический педикюр со SPA-уходом</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">2000<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Аппаратный педикюр со SPA-уходом</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">2500<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Массаж ног</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">600<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Покрытие лечебным лаком</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">600<span class="wallet">руб.</span></span>
+                </div>
+              </div>
+
+              <span class="button modal-button" data-modal="callback">Записаться</span>
+            </div>
+
+            <div class="service__slider-item service__slider-item--set">
+              <div class="table">
+                <div class="table__row">
+                  <span class="table__cell">Комплекс «МЫ С ПАПОЙ» стрижка + стрижка джентельмена до 12 лет</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">3000<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Комплекс «ДВА В ОДНОМ» стрижка + стрижка усов и бороды</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">2800<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Комплекс «РУКИ-НОГИ» классический маникюр со SPA-уходом + классический педикюр со SPA-уходом</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">3000<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Комплекс «ALL INCLUSIVE» стрижка + королевское бритье + классический маникюр со SPA-уходом + классический педикюр со SPA-уходом</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">7200<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Стрижка усов и бороды</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">1000<span class="wallet">руб.</span></span>
+                </div>
+              </div>
+
+              <span class="button modal-button" data-modal="callback">Записаться</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="other">
+      <div class="container">
+        <h2 class="other__title -nomargin-top line">Дополнительные услуги</h2>
+
+        <div class="other__wrapper tab__wrapper">
+          <div class="other__article tab__article">
+            <h3 class="other__subtitle">Еда и напитки</h3>
+
+            <div class="other__text">
+              <p>В мужском пространстве Mr.Grek Вы так же можете заказать еду и напитки. Теперь Вы можете не беспокоиться о голоде в то время, как наши специалисты работают с Вами.</p>
+            </div>
+
+            <div class="other__content">
+              <div class="table">
+                <div class="table__row">
+                  <span class="table__cell">бургер rgb</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">560<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row table__row--detail">
+                  <span class="table__cell table__cell--detail">Говядина, салат, томат, огурец, красный лук, домашний соус</span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">стейк сэндвич</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">750<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">классический клаб сэндвич</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">490<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">пицца острая с колбасками</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">560<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">пицца маргарита</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">480<span class="wallet">руб.</span></span>
                 </div>
               </div>
             </div>
           </div>
 
+          <div class="other__article tab__article">
+            <h3 class="other__subtitle">Чистка и реставрация обуви</h3>
+
+            <div class="other__text">
+
+              <p>Говорят, что обувь может рассказать о своем хозяине то, насколько он серьезен и профессионален. В мужском пространстве Mr. Grek вы можете не только почистить обувь, но и отреставрировать ее. Результат удивит вас!</p>
+            </div>
+
+            <div class="other__content">
+              <div class="table">
+                <div class="table__row">
+                  <span class="table__cell">Чистка кожаной обуви</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">500<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Чистка замшевой обуви</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">600<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Чистка кожаной обуви, с пропиткой</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">600<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Чистка кожаной обуви из рептилий / сапоги / угги</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">700<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Замена шнурков</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">350<span class="wallet">руб.</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="other__article tab__article">
+            <h3 class="other__subtitle">Мойка автомобиля</h3>
+
+            <div class="other__text">
+
+            </div>
+
+            <div class="other__content">
+              <div class="table">
+                <div class="table__row">
+                  <span class="table__cell">Экспресс-мойка</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">450/500/550<span class="wallet">руб.</span></span>
+                </div>
+
+                <div class="table__row">
+                  <span class="table__cell">Люкс мойка</span>
+                  <span class="table__cell price-dots"></span>
+                  <span class="table__cell price">750/800/900<span class="wallet">руб.</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="other__nav">
+          <span class="button button--white other__nav-item tab">Еда и напитки</span>
+          <span class="button button--white other__nav-item tab">Чистка обуви</span>
+          <span class="button button--white other__nav-item tab">Мойка автомобиля</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="partners" id="partners">
+      <div class="container">
+        <div class="partners__row">
+          <h2 class="partners__title line">Наши партнеры</h2>
+
+          <div class="partners__text">
+            <p>Наши партнеры предоставляют нашим клиентам подарки и скидки при посещении пространства Mr. Grek.</p>
+          </div>
+        </div>
+
+        <div class="partners__row">
+          <figure class="figure">
+            <figcaption class="figcaption">Audi Центр<br>
+              Петроградский</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_audi.png);"></div>
+
+            <div class="figure__text">
+              <p>Предоставляем подарочный сертификат на 2 000 руб. при сервисном обслуживании в данном центре</p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Аксель-Моторс<br>
+              BMW</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_bmw.png);"></div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Ресторан<br>
+              Cheer Duck</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_cheerduck.png);"></div>
+
+            <div class="figure__text">
+              <p>Купоны на скидку 10%.</p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Мойка Tyrecity</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_tyrecity.png);"></div>
+
+            <div class="figure__text">
+              <p>Скидка 10% клиентам нашего салона.</p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Ресторан<br>
+              «RBG BAR&GRILL»</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_rbg.png);"></div>
+
+            <div class="figure__text">
+              <p>Предоставляется скидка 10% нашим гостям.</p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Бутик эксклюзивных<br>
+              десертов LerAl Cakes</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_leral.png);"></div>
+
+            <div class="figure__text">
+              <p>Предоставляется скидка 10% на любой заказ.</p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Подарки и предметы<br>
+              интерьера «Гоголь Шоп»</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_gogol.png);"></div>
+
+            <div class="figure__text">
+              <p>Предоставляется скидка 10% по кодовой фразе «Мистер Грек».</p>
+            </div>
+          </figure>
+
+          <figure class="figure">
+            <figcaption class="figcaption">Ресторан<br>
+              «Маймун»</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_maimoon.png);"></div>
+          </figure>
         </div>
       </div>
     </section>
 
+    <section class="cosmetics-section" id="cosmetics" style="background: url(img/cosmetics_bg.png) no-repeat 0 0 / cover;">
+      <div class="container">
+        <div class="cosmetics-section__row">
+          <h2 class="cosmetics-section__title -nomargin-top line">Косметика</h2>
 
+          <div class="cosmetics-section__text">В Mr.Grek мы используем косметику компании<br>
+            Truefitt & Hill / Muehle / La biosthetique
+          </div>
+
+          <div class="cosmetics-section__more">
+            <a href="cosmetics.html" class="button button--white">Подробнее о косметике<span class="icon icon--arrow-right"></span></a>
+          </div>
+
+          <div class="cosmetics-section__text">
+            Вы также можете приобрести ее у нас:
+          </div>
+
+          <div class="cosmetics-section__btn">
+            <span class="button modal-button" data-modal="callback">Забронировать косметику</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="instagram" id="instagram">
+        <div class="instagram__row">
+          <h2 class="instagram__title line">Мы в Instagram</h2>
+
+          <iframe class="instagram__item instagram__item--lg" src="//lightwidget.com/widgets/a7e05f549d865062b06f1a71dc420369.html" id="lightwidget_a7e05f549d" name="lightwidget_a7e05f549d"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
+          <iframe class="instagram__item instagram__item--xs" src="//lightwidget.com/widgets/c77d435324965dfca445ea6118eebe03.html" id="lightwidget_c77d435324" name="lightwidget_c77d435324"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+        </div>
+    </div>
+
+    <div class="contacts" id="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__form">
+          <h2 class="contacts__title -nomargin-top line">Контакты</h2>
+
+          <div class="contacts__text">
+            у вас есть вопросы или предложения?<br>
+            Напишите нам:
+          </div>
+
+          <form action="">
+            <input type="text" class="textfield" name="name" placeholder="Имя">
+            <input type="tel" class="textfield" name="tel" placeholder="Номер телефона">
+            <input type="text" class="textfield" name="question" placeholder="Ваш вопрос">
+            <button class="button" type="submit">Задать вопрос</button>
+          </form>
+        </div>
+
+        <div class="contacts__info">
+          <div class="contacts__item">
+            <div class="contacts__item-caption">Почта:</div>
+            <a href="mailto:info@mrgrek.com" class="contacts__item-link -nounderline">info@mrgrek.com</a>
+          </div>
+
+          <div class="contacts__item">
+            <div class="contacts__item-caption">Адрес:</div>
+            <span class="contacts__item-link contacts__item-link--nounderline">Кораблестроителей д.14, Park inn by Radisson</span>
+          </div>
+
+          <div class="contacts__item">
+            <div class="contacts__item-caption">Телефон:</div>
+            <a href="tel:+78129331700" class="contacts__item-link -nounderline">933 17 00</a>
+          </div>
+
+          <div class="contacts__item contacts__item--social">
+            <div class="contacts__item-caption">Мы в:</div>
+            <a href="https://www.instagram.com/mister.grek/" class="contacts__item-link">instagram</a> /
+            <a href="https://vk.com/mister.grek" class="contacts__item-link">vk.com</a> /
+            <a href="https://www.facebook.com/mistergrek/" class="contacts__item-link">facebook</a>
+          </div>
+
+          <div class="contacts__item contacts__item--payment">
+            <div class="contacts__item-caption contacts__item-caption--payment">
+              У нас можно расплачиваться:
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts__wrapper">
+        <div class="map" data-lat="59.939019" data-long="30.214687" data-zoom="16" data-address="Кораблестроителей д.14"></div>
+      </div>
+    </div>
   </div>
+
+  <script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
 </body>
 </html>

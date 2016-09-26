@@ -1,4 +1,3 @@
-@import "../common/variables.less";
 //------------------------------------------------------------------------------
 //  Генератор правил для контейнера
 //------------------------------------------------------------------------------
@@ -8,11 +7,13 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: (@grid-gutter-width / 2);
-  padding-right: (@grid-gutter-width / 2);
+  padding-left: (@grid-gutter-width + 10);
+  padding-right: (@grid-gutter-width + 10);
 
   @media (min-width: @screen-sm) {
     width: @container-sm;
+    padding-left: @grid-gutter-width;
+    padding-right: @grid-gutter-width;
   }
 
   @media (min-width: @screen-md) {
@@ -21,6 +22,8 @@
 
   @media (min-width: @screen-lg) {
     width: @container-lg;
+    //padding-left: (@grid-gutter-width / 2);
+    //padding-right: (@grid-gutter-width / 2);
   }
 
   @media (min-width: @screen-xl) {
@@ -45,53 +48,84 @@
 //  @xl-grid-gutter:   @grid-gutter-width - промежуток между ячейками XL-сетки
 //  @xxl-grid-gutter:  @grid-gutter-width - промежуток между ячейками XXL-сетки
 //------------------------------------------------------------------------------
-//  Примеры: http://codepen.io/nicothin/pen/obRMgx?editors=1100
+//  Тестирование: http://codepen.io/nicothin/pen/NNggVx?editors=0100
 //------------------------------------------------------------------------------
 
 .row(@xs-grid-gutter: @grid-gutter-width; @sm-grid-gutter: @grid-gutter-width; @md-grid-gutter: @grid-gutter-width; @lg-grid-gutter: @grid-gutter-width; @xl-grid-gutter: @grid-gutter-width; @xxl-grid-gutter: @grid-gutter-width;) {
   display: flex;
   flex-wrap: wrap;
 
-  & when not (@xs-grid-gutter = false) {
+  // & > * {
+  //   display: block;
+  //   width: 100%;
+  // }
+
+  // Если первая переданная переменная не ноль — выводим margin-ы по умолчанию
+  & when not (@xs-grid-gutter = 0) {
+    //margin-left:  ((@xs-grid-gutter + 10)/ -2);
+    //margin-right: ((@xs-grid-gutter + 10) / -2);
+
     margin-left:  (@xs-grid-gutter / -2);
     margin-right: (@xs-grid-gutter / -2);
-  }
 
-  & when not (@sm-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-sm) {
-      margin-left:  (@sm-grid-gutter / -2);
-      margin-right: (@sm-grid-gutter / -2);
-    }
+    //@media (min-width: @screen-sm) {
+    //  margin-left:  (@xs-grid-gutter / -2);
+    //  margin-right: (@xs-grid-gutter / -2);
+    //}
   }
-
-  & when not (@md-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-md) {
-      margin-left:  (@md-grid-gutter / -2);
-      margin-right: (@md-grid-gutter / -2);
-    }
-  }
-
-  & when not (@lg-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-lg) {
-      margin-left:  (@lg-grid-gutter / -2);
-      margin-right: (@lg-grid-gutter / -2);
-    }
-  }
-
-  & when not (@xl-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-xl) {
-      margin-left:  (@xl-grid-gutter / -2);
-      margin-right: (@xl-grid-gutter / -2);
-    }
-  }
-
-  & when not (@xxl-grid-gutter = @xs-grid-gutter) {
-    @media (min-width: @screen-xxl) {
-      margin-left:  (@xxl-grid-gutter / -2);
-      margin-right: (@xxl-grid-gutter / -2);
-    }
-  }
+  // Если первая переданная переменная не ноль — выводим padding-и по умолчанию для прямых потомков
+  // & when not (@xs-grid-gutter = 0) {
+  //   & > * {
+  //     padding-left:  @grid-gutter-width/2;
+  //     padding-right: @grid-gutter-width/2;
+  //   }
+  // }
 }
+
+// .row(0){
+//   display: flex;
+//   flex-wrap: wrap;
+//   & > * {
+//     padding-left:  0;
+//     padding-right: @0;
+//   }
+// }
+
+// & when not (@sm-grid-gutter = @xs-grid-gutter) {
+//   @media (min-width: @screen-sm) {
+//     margin-left:  (@sm-grid-gutter / -2);
+//     margin-right: (@sm-grid-gutter / -2);
+//   }
+// }
+
+// & when not (@md-grid-gutter = @sm-grid-gutter) {
+//   @media (min-width: @screen-md) {
+//     margin-left:  (@md-grid-gutter / -2);
+//     margin-right: (@md-grid-gutter / -2);
+//   }
+// }
+
+// & when not (@lg-grid-gutter = @md-grid-gutter) {
+//   @media (min-width: @screen-lg) {
+//     margin-left:  (@lg-grid-gutter / -2);
+//     margin-right: (@lg-grid-gutter / -2);
+//   }
+// }
+
+// & when not (@xl-grid-gutter = @lg-grid-gutter) {
+//   @media (min-width: @screen-xl) {
+//     margin-left:  (@xl-grid-gutter / -2);
+//     margin-right: (@xl-grid-gutter / -2);
+//   }
+// }
+
+// & when not (@xxl-grid-gutter = @xl-grid-gutter) {
+//   @media (min-width: @screen-xxl) {
+//     margin-left:  (@xxl-grid-gutter / -2);
+//     margin-right: (@xxl-grid-gutter / -2);
+//     }
+//   }
+// }
 
 
 
@@ -132,6 +166,11 @@
     padding-left: (@gutter / 2);
     padding-right: (@gutter / 2);
   }
+
+  //@media (max-width: @screen-sm) {
+  //  padding-left: ((@gutter + 10) / 2);
+  //  padding-right: ((@gutter + 10) / 2);
+  //}
 }
 
 
@@ -179,6 +218,45 @@
   }
 }
 
+//------------------------------------------------------------------------------
+//  Генератор правил для отступа одной ячейки с возможностью указать @media
+//------------------------------------------------------------------------------
+//  Принимает:
+//  @screen:      xs                    - тип сетки [xs|sm|md|lg|xl|xxl]
+//  @column:      1                     - ширина отступа (кол-во колонок)
+//  @columns:     @grid-columns;        - общее количество ячеек на 1 ряд
+//------------------------------------------------------------------------------
+
+.col-offset(@screen: xs, @column: 1, @columns: @grid-columns) {
+  & when (@screen = xs) {
+    margin-left: (@column * 100% / @columns);
+  }
+  & when (@screen = sm) {
+    @media (min-width: @screen-sm) {
+      margin-left: (@column * 100% / @columns);
+    }
+  }
+  & when (@screen = md) {
+    @media (min-width: @screen-md) {
+      margin-left: (@column * 100% / @columns);
+    }
+  }
+  & when (@screen = lg) {
+    @media (min-width: @screen-lg) {
+      margin-left: (@column * 100% / @columns);
+    }
+  }
+  & when (@screen = xl) {
+    @media (min-width: @screen-xl) {
+      margin-left: (@column * 100% / @columns);
+    }
+  }
+  & when (@screen = xxl) {
+    @media (min-width: @screen-xxl) {
+      margin-left: (@column * 100% / @columns);
+    }
+  }
+}
 
 
 //------------------------------------------------------------------------------

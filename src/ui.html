@@ -82,10 +82,11 @@
     <div class="container" style="padding-top: 50px;">
         <h1>Кнопки</h1>
 
-        <span class="button">Кнопка</span>
-        <span class="button button--transparent-white">Прозрачная кнопка</span>
-        <span class="button button--transparent-black">Прозрачная кнопка черный шрифт</span>
-        <span class="button button--white">Белая прозрачная кнопка</span>
+        <span class="button" style="margin: 10px;">Кнопка</span>
+        <span class="button button--transparent-white" style="margin: 10px;">Прозрачная кнопка</span>
+        <span class="button button--transparent-black" style="margin: 10px;">Прозрачная кнопка черный шрифт</span>
+        <span class="button button--white" style="margin: 10px;">Белая прозрачная кнопка</span>
+        <span class="button button--gray" style="margin: 10px;">Серая прозрачная кнопка</span>
     </div>
 
     <div class="container" style="padding-top: 50px;">
@@ -112,35 +113,38 @@
     <div class="container" style="padding: 50px 0;">
         <h1>Таблица</h1>
 
-        <div class="price-table">
-            <div class="price-table__row">
-                <span class="price-table__cell">Классическое бритье</span>
-                <span class="price-table__cell price-dots"></span>
-                <span class="price-table__cell price">1600<span class="wallet">руб.</span></span>
+        <div class="table">
+            <div class="table__row">
+                <span class="table__cell">Классическое бритье</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1600<span class="wallet">руб.</span></span>
+            </div>
+            <div class="table__row table__row--detail">
+                <span class="table__cell table__cell--detail">Говядина, салат, томат, огурец, красный лук, домашний соус</span>
             </div>
 
-            <div class="price-table__row">
-                <span class="price-table__cell">Королевское бритье</span>
-                <span class="price-table__cell price-dots"></span>
-                <span class="price-table__cell price">2500<span class="wallet">руб.</span></span>
+            <div class="table__row">
+                <span class="table__cell">Королевское бритье</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">2500<span class="wallet">руб.</span></span>
             </div>
 
-            <div class="price-table__row">
-                <span class="price-table__cell">Моделирование бороды</span>
-                <span class="price-table__cell price-dots"></span>
-                <span class="price-table__cell price">1500<span class="wallet">руб.</span></span>
+            <div class="table__row">
+                <span class="table__cell">Моделирование бороды</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1500<span class="wallet">руб.</span></span>
             </div>
 
-            <div class="price-table__row">
-                <span class="price-table__cell">Окраска бороды</span>
-                <span class="price-table__cell price-dots"></span>
-                <span class="price-table__cell price">1000<span class="wallet">руб.</span></span>
+            <div class="table__row">
+                <span class="table__cell">Окраска бороды</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1000<span class="wallet">руб.</span></span>
             </div>
 
-            <div class="price-table__row">
-                <span class="price-table__cell">Стрижка усов и бороды</span>
-                <span class="price-table__cell price-dots"></span>
-                <span class="price-table__cell price">1000<span class="wallet">руб.</span></span>
+            <div class="table__row">
+                <span class="table__cell">Стрижка усов и бороды</span>
+                <span class="table__cell price-dots"></span>
+                <span class="table__cell price">1000<span class="wallet">руб.</span></span>
             </div>
         </div>
     </div>
@@ -150,10 +154,13 @@
 
     </div>
 
-    <div class="container" style="padding-top: 50px;">
+    <div class="container" style="padding-top: 50px; background: #000;">
         <h1>Иконки</h1>
         <span class="icon icon--map"></span>
         <br>
+
+        <span class="icon icon--menu" ></span>
+        <span class="icon icon--arrow-back" ></span>
 
         <!--<figure class="icon-box">-->
             <!--<div class="icon-box__icon">-->
@@ -187,6 +194,22 @@
                 <!--<a href="mailto:info@akkrecia.ru" cclass="icon-box__info">info@akkrecia.ru</a>-->
             <!--</figcaption>-->
         <!--</figure>-->
+    </div>
+
+
+
+    <div class="container" style="padding-top: 50px;">
+
+        <figure class="figure" style="display: inline-block;">
+            <figcaption class="figcaption">Audi Центр Петроградский</figcaption>
+
+            <div class="figure__img" style="background-image:url(img/partner_audi.png);"></div>
+
+            <div class="figure__text">
+                <p>Предоставляем подарочный сертификат на 2 000 руб. при сервисном обслуживании в данном центре</p>
+            </div>
+        </figure>
+
     </div>
 </body>
 </html>

@@ -1,0 +1,121 @@
+.gallery {
+  padding: 70px 0 135px;
+
+  &__row {
+    .row;
+  }
+
+  &__title {
+    .col (xs, 12);
+    text-align: center;
+    margin-bottom: 78px;
+  }
+
+  &__nav {
+    .col (xs, 12);
+    .col (xxl, 12);
+    margin-bottom: 30px;
+  }
+
+  &__nav-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: @font-family-bebas;
+    letter-spacing: @letter-spacing;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media all and (max-width: @screen-lg) and (min-width: @screen-md) {
+      margin: 0 20px;
+    }
+
+    @media all and (max-width: @screen-md) {
+      margin: 0;
+    }
+  }
+
+  &__nav-item {
+    padding: 0 30px;
+    transition: .15s linear;
+
+    &:hover {
+      color: @red;
+    }
+
+    @media all and (max-width: @screen-xxl) {
+      padding: 0 10px;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0 18px;
+    width: 100%;
+    min-height: 400px;
+
+    @media all and (max-width: @screen-sm) {
+      padding: 0;
+    }
+  }
+
+  &__article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    background: no-repeat center / cover;
+    margin: 2px;
+    border-bottom: none;
+
+    @media all and (max-width: @screen-xxl) and (min-width: @screen-xl) {
+      width: 225px;
+      height: 225px;
+    }
+
+    @media all and (max-width: @screen-xl) and (min-width: @screen-lg){
+      width: 22vw;
+      height: 22vw;
+    }
+
+    @media all and (max-width: @screen-lg) and (min-width: @screen-md) {
+      width: 21vw;
+      height: 21vw;
+      font-size: 23px;
+    }
+
+    @media all and (max-width: @screen-md) and (min-width: @screen-sm)  {
+      width: 36vw;
+      height: 36vw;
+      font-size: 23px;
+    }
+
+    @media all and (max-width: @screen-sm) {
+      width: 276px;
+      height: 276px;
+      font-size: 23px;
+    }
+  }
+}
+
+//a.gallery__nav-link--current {
+//  color: @red;
+//}
+
+//a.gallery__nav-link {
+//  @media all and (max-width: @screen-md) {
+//    font-size: 23px;
+//  }
+//
+//  &:hover, &:focus {
+//    color: @red;
+//  }
+//}

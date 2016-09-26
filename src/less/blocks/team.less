@@ -1,0 +1,203 @@
+.team {
+  padding: 70px 0 65px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  &__title {
+    .col (xs, 12);
+    text-align: center;
+    margin-bottom: 64px;
+
+    @media all and (max-width: @screen-sm) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__row {
+    .row;
+    position: relative;
+  }
+
+  &__wrapper {
+    .col (xs, 12);
+    .col (lg, 10);
+    .col-offset(lg, 1);
+    min-height: 450px;
+  }
+
+  &__item {
+    max-width: 924px;
+    //height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    margin: 0 auto;
+    height: auto;
+
+    @media all and (max-width: @screen-lg) {
+      background-position: 0 0;
+      background-size: 100%;
+    }
+
+    @media all and (max-width: (@screen-md - 1)) {
+      //height: auto;
+      //background-position: 0 0;
+      //background-size: 100%;
+      position: static;
+    }
+
+    @media all and (max-width: @screen-sm) {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  &__border {
+    width: 100%;
+    height: 100%;
+    border: 2px solid @dark_gray;
+
+    @media all and (max-width: @screen-sm) {
+      border-color: transparent;
+    }
+  }
+  
+  &__content {
+    width: 40%;
+    margin-left: 60%;
+    padding: 25px 15px;
+
+    @media all and (max-width: @screen-lg) {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 55%;
+
+      &--vacancies {
+        margin-top: 0;
+      }
+    }
+
+    @media all and (max-width: @screen-sm) {
+      padding: 1px 0;
+    }
+  }
+
+  &__subtitle {
+    width: 100%;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 100px;
+
+    @media all and (max-width: @screen-lg) {
+      margin-top: 0;
+    }
+
+    .button {
+      @media all and (max-width: @screen-sm) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__nav {
+    .hidden-down(sm);
+    .col (md, 12);
+    .col (lg, 10);
+    .col-offset(lg, 1);
+  }
+
+  &__nav-list {
+    .row;
+    justify-content: space-between;
+    max-width: 924px;
+    margin: 0 auto;
+  }
+
+  &__nav-item {
+    .col (xs, 4);
+    .col (xxl, 3);
+    height: 100%;
+    margin: 45px 5px;
+    cursor: pointer;
+    transition: .15s linear;
+
+    @media all and (max-width: @screen-xxl) {
+      margin: 45px 0;
+    }
+
+    &:hover {
+      .team__nav-img,
+      .team__vacancies {
+        border: 2px solid @red;
+      }
+    }
+
+    &--current {
+      .team__nav-img {
+        border: 2px solid @red;
+      }
+    }
+  }
+
+  &__nav-caption {
+    font-family: @font-family-bebas;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+    @media all and (max-width: @screen-xxl) {
+      font-size: 19px;
+    }
+  }
+
+  &__nav-img {
+    width: 225px;
+    height: 130px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border: 2px solid transparent;
+
+    @media all and (max-width: @screen-lg) {
+      width: 100%;
+    }
+  }
+
+  &__vacancies {
+    font-size: 16px;
+    color: #808080;
+    width: 225px;
+    height: 130px;
+    border: 2px solid @brown;
+    margin-top: 44px;
+    padding: 32px 16px;
+    text-align: center;
+  }
+
+  &__vacancies-link {
+    font-family: @font-family-bebas;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    color: @brown;
+    font-weight: 700;
+  }
+
+  &__title--vacancies {
+    .hidden-up(md);
+  }
+
+  &__item--vacancies {
+    .hidden-up(md);
+    .col (xs, 12);
+    padding: 30px;
+  }
+
+  &__content--vacancies {
+    margin-top: 0;
+  }
+}

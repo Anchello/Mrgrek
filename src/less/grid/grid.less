@@ -1,7 +1,3 @@
- @import "grid-mixins.less";
- @import "../common/variables.less";
-
-
 .container {
   .container();
 }
@@ -11,7 +7,7 @@
 }
 
 // Классы модульной сетки для XS — срабатывают на всех ширинах
-.make-column-list-general-rules(xs); // список всех селекторов .col-xs-... и их общие свойства
+.make-column-list-general-rules(xs); // список всех селекторов .col-xs-... и их обще свойства
 .make-columns(@grid-columns, xs);    // ширины для каждого селектора .col-xs-... отдельно
 .make-offsets(@grid-columns, xs);    // левые отступы для каждого селектора .col-xs-offset-...
 
@@ -44,8 +40,8 @@
 }
 
 // Классы модульной сетки для XXL — срабатывают на ширине @screen-xxl (по умолчанию: 1890px)
-.make-column-list-general-rules(xxl); // список всех селекторов .col-xxl-... и их обще свойства
-@media (min-width: @screen-xxl) {
-  .make-columns(@grid-columns, xxl);  // ширины для каждого селектора .col-xxl-... отдельно
-  .make-offsets(@grid-columns, xxl);  // левые отступы для каждого селектора .col-xxl-offset-...
-}
+// .make-column-list-general-rules(xxl); // список всех селекторов .col-xxl-... и их обще свойства
+// @media (min-width: @screen-xxl) {
+//   .make-columns(@grid-columns, xxl);  // ширины для каждого селектора .col-xxl-... отдельно
+//   .make-offsets(@grid-columns, xxl);  // левые отступы для каждого селектора .col-xxl-offset-...
+// }

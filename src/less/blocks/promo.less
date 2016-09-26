@@ -3,42 +3,46 @@
   justify-content: center;
   color: @white;
   padding-top: 120px;
-  padding-bottom: 48px;
+  padding-bottom: 108px;
 
   &__title {
-    .col (xl, 10);
+    .col (xs, 12);
+    .col (md, 10);
     text-align: center;
     position: relative;
     margin: 0 0 63px;
-
-    &::before {
-      content: '';
-
-      height: 2px;
-      width: 310px;
-      position: absolute;
-      background: @red;
-      bottom: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
   }
 
   &__text {
-    .col (xl, 6);
+    .col (xs, 12);
+    .col (md, 10);
+    text-align: center;
     font-size: 30px;
     font-family: @font-family-bebas;
     text-transform: uppercase;
     letter-spacing: @letter-spacing;
     margin-bottom: 108px;
+
+    &--sm {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+
+    @media all and (max-width: @screen-md) {
+      font-size: 20px;
+    }
   }
 
   &__btn {
-    .col (xl, 12);
+    .col (xs, 12);
     text-align: center;
 
     .button {
       margin: 12px 24px;
+
+      @media all and (max-width: @screen-sm) {
+        margin: 12px 0;
+      }
     }
   }
 }

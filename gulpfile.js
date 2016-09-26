@@ -38,7 +38,7 @@ gulp.task('build', function(){
     .pipe(gulp.dest('./build/'));
   gulp.src('./src/img/**/*.*')
     .pipe(gulp.dest('./build/img'));
-  gulp.src('./src/js/*.js')
+  gulp.src('./src/js/**/*.*')
     .pipe(uglify())
     .pipe(gulp.dest('./build/js'));
   gulp.src('./src/svg/*.svg')

@@ -1,60 +1,122 @@
 .news {
-  padding-top: 50px;
-}
+  padding: 105px 0 130px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
 
-.news__title {
-  text-align: center;
-  color: @white;
-  text-align: center;
-}
+  @media all and (max-width: @screen-md) {
+    padding: 70px 0;
+  }
 
-.news__wrapper {
-  .row;
-  padding: 45px 0;
-  //position: relative;
-}
+  .container {
+    @media all and (max-width: (@screen-md - 1)) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 
-.news-slider {
-  .col (xs, 10);
+  &__title {
+    .col (xs, 12);
+    .col (lg, 7);
+    .col-offset(lg, 4);
+    text-align: center;
+    margin-bottom: 64px;
+  }
 
-  &__item {
-    width: 49%;
-    display: inline-block;
-    vertical-align: top;
-    padding: 0 35px;
+  &__row {
+    .row;
+    position: relative;
+  }
+
+  &__nav {
+    .hidden-down(sm);
+    .col (md, 4);
+    .col (lg, 4);
+  }
+
+  &__nav-list {
+    padding-left: 0;
+    list-style-type: none;
+    font-family: @font-family-bebas;
+    letter-spacing: @letter-spacing;
+    font-size: 24px;
+    text-align: right;
+    font-weight: 700;
+    margin-right: -20px;
+  }
+
+  &__nav-item {
+    height: 100%;
+
+    &--current {
+      .news__nav-link {
+        color: @red;
+        background: @white;
+      }
+    }
+  }
+
+  &__slider {
+    .col (xs, 12);
+    .col (sm, 10);
+    .col-offset(sm, 1);
+    .col (md, 8);
+    .col-offset(md, 0);
+    .col (lg, 7);
+    min-height: 615px;
+    //.col (xxl, 5);
+  }
+
+  &__slider-item {
+    padding: 40px 55px 50px;
+    background: @white;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 710px;
+
+    @media all and (max-width: (@screen-md - 1)) {
+      padding: 40px 30px 50px;
+      position: static;
+      margin-bottom: 35px;
+      min-height: auto;
+    }
+
+    .button {
+      width: 100%;
+    }
   }
 
   &__data {
-    font-size: 16px;
+    font-size: 22px;
     font-family: @font-family-bebas;
     letter-spacing: @letter-spacing;
     font-weight: 300;
+    margin-bottom: 30px;
   }
 
   &__subtitle {
-    margin: 5px 0 30px;
+    margin: 0 0 30px;
   }
 
-  &__btn {
-    .col (xs, 1);
-    position: relative;
-    top: 60px;
-    height: 50px;
-    cursor: pointer;
-
-    &--prev {
-      left: 0;
-    }
-
-    &--next {
-      right: 0;
-    }
-
-    .material-icons {
-      font-size: 60px;
-      color: @light_gray;
-    }
+  &__content {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
+a.news__nav-link {
+  padding: 12px 22px;
+  display: inline-block;
 
+  @media all and (max-width: @screen-lg) {
+    font-size: 20px;
+    padding: 12px 15px;
+  }
+
+  &:hover, &:focus {
+    color: @red;
+  }
+}

@@ -1,0 +1,33 @@
+.tab {
+  cursor: pointer;
+
+  &--current {
+    &.other__nav-item {
+      border-color: @red;
+    }
+
+    &.gallery__nav-item,
+    &.cosmetics__nav-item {
+      color: @red;
+    }
+
+    &.social-networks__nav-item {
+      border-color: @red;
+    }
+
+    .team__nav-img {
+      border: 2px solid @red;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__article {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

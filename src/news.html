@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta name="author" content="Boroda Digital, borodaboroda.com">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Новости — MrGrek</title>
+
+    <meta property="og:title" content="MrGrek">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
+    <meta name="theme-color" content="#6b131c">
+    <meta name="msapplication-navbutton-color" content="#6b131c">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <link rel="manifest" href="icons/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#6b131c">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="msapplication-config" content="browserconfig.html">
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/font.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <!--<link href="less/style.less" rel="stylesheet/less" type="text/css">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--<script src="https://use.fontawesome.com/da01d10ace.js"></script>-->
+    <script src="js/jquery.map.js"></script>
+    <script src="js/jquery.startscreen.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/jquery.service_tab.js"></script>
+    <script src="js/jquery.tabs.js"></script>
+    <script src="js/jquery.carousel.js"></script>
+    <script src="js/jquery.modal.js"></script>
+    <script src="js/jquery.dropdown.js"></script>
+    <script src="js/init.js"></script>
+
+</head>
+<body>
+<div class="page__wrapper">
+    <div class="modal-overlay">
+        <div class="modal-overlay__substrate"></div>
+
+        <div class="modal modal--callback">
+        <span class="modal__close">Закрыть
+            <i class="material-icons">clear</i>
+        </span>
+
+            <div class="modal__wrapper">
+                <img class="modal__logo" src="svg/logo_black.svg">
+
+                <p class="modal__subtitle -nomargin">Отправьте заявку и наш администратор свяжется с вами в ближайшее!</p>
+
+                <form class="modal__form ajax-form" action="">
+                    <input type="text" class="textfield" name="name" placeholder="Ваше имя">
+
+
+                    <input type="tel" class="textfield" name="tel" placeholder="Ваш телефон">
+
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-menu__close">
+        <span class="icon icon--arrow-back" ></span>
+    </div>
+
+    <div class="mobile-menu">
+        <nav class="mobile-nav">
+            <div class="container">
+                <ul class="mobile-nav__sublist">
+                    <li class="mobile-nav__subitem mobile-nav__subitem--back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                    <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
+                    <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
+                    <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
+                    <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
+                    <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
+                    <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
+                    <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
+                    <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
+                </ul>
+
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
+                    <li class="mobile-nav__item mobile-nav__item--more">
+                        <a class="mobile-nav__link mobile-nav__link--more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
+                    </li>
+                    <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
+                    <li class="mobile-nav__item"><a href="service.html" class="mobile-nav__link">Услуги</a></li>
+                    <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
+                </ul>
+
+
+            </div>
+        </nav>
+
+        <div class="mobile-nav__contact">
+            <div class="container">
+                <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+                <span class="contact__address">ул. Кораблестроителей д.14,</span>
+                <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+            </div>
+        </div>
+
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <a href="index.html" class="main-logo">
+                        <img src="svg/logo_white.svg">
+                    </a>
+                </div>
+
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
+                        <li class="header-nav__item header-nav__item--more">
+                            <a class="header-nav__link">О Mr.Grek
+                                <span class="icon icon--arrow"></span>
+                            </a>
+
+                            <ul class="header-nav__list header-nav__list--sub">
+                                <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
+                                <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
+                                <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
+                                <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
+                                <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
+                                <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
+                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
+                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                        <li class="header-nav__item"><a href="service.html" class="header-nav__link">Услуги</a></li>
+                        <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-contact">
+                    <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+                    <span class="contact__address">ул. Кораблестроителей д.14,</span>
+                    <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+                </div>
+
+                <div class="header__icon-menu">
+                    <span class="icon icon--menu" ></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="news service-tab" style="background-image: url(img/service-main_bg.jpg)">
+        <div class="container">
+            <div class="news__row">
+                <h2 class="news__title -nomargin-top line">Новости и статьи</h2>
+
+                <div class="news__nav">
+                    <ul class="news__nav-list">
+                        <li class="news__nav-item service__nav-item" data-tabs="10"><a class="news__nav-link service__nav-link -black">Конкурс с рестораном Маймун от GINZA PROJECT</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="09"><a class="news__nav-link service__nav-link -black">Ручная экспресс чистка обуви в подарок!</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="08"><a class="news__nav-link service__nav-link -black">19 мая празднуем свой маленький юбилей</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="07"><a class="news__nav-link service__nav-link -black">Деловой Петербург о нас</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="06"><a class="news__nav-link service__nav-link -black">Здесь бреют по-королевски!</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="05"><a class="news__nav-link service__nav-link -black">О нас пишут</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="04"><a class="news__nav-link service__nav-link -black">Новая услуга</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="03"><a class="news__nav-link service__nav-link -black">Розыгрыш Apple watch!</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="02"><a class="news__nav-link service__nav-link -black">Чистка обуви</a></li>
+                        <li class="news__nav-item service__nav-item" data-tabs="01"><a class="news__nav-link service__nav-link -black">Мы открылись</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="news__slider service__wrapper">
+                    <div class="news__slider-item service__slider-item service__slider-item--10">
+                            <div class="news__data"><time datetime="2016-07-15">15.07.2016</time></div>
+
+                            <h3 class="news__subtitle">Конкурс с рестораном Маймун от GINZA PROJECT</h3>
+
+                            <div class="news__content">
+                                <p>Дарим подарочные сертификаты на 3000, 1500 и 1000 рублей! Ресторан «Маймун» совместно с мужским пространством Mr. Grek проводят конкурс «Мистер Маймун» на самую стильную бороду</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--09">
+                            <div class="news__data"><time datetime="2016-06-01">01.06.2016</time></div>
+
+                            <h3 class="news__subtitle">Ручная экспресс чистка обуви в подарок!</h3>
+
+                            <div class="news__content">
+                                <p>Добрый день, джентльмены! У нас для Вас замечательная новость! С 1 июня по 1 июля 2016 года всем Гостям, записавшимся к нам на услуги, мы предоставляем "ручную экспресс чистку обуви" в подарок!</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--08">
+                            <div class="news__data"><time datetime="2016-05-13">13.05.2016</time></div>
+
+                            <h3 class="news__subtitle">19 мая празднуем свой маленький юбилей</h3>
+
+                            <div class="news__content">
+                                <p>Джентельмены! 19 мая мужское пространство празднует свой маленький юбилей. В честь нашего дня рождения всех гостей, записавшихся предварительно на услуги наших мастеров, ждут приятные комплименты и процедуры. Вечером в 19.00 начнется настоящий праздник с шампанским, фруктами, угощениями и мастер-класс по Королевскому бритью. И главным событием вечера станет определение победителей, которые станут обладателями Apple Watch Sport, косметики Truefitt & Hill и сертификата на услугу в Mr.Grek</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--07">
+                            <div class="news__data"><time datetime="2016-29-04">29.04.2016</time></div>
+
+                            <h3 class="news__subtitle">Деловой Петербург о нас</h3>
+
+                            <div class="news__content">
+                                <p>Предприниматели Мария и Михаил Грек на волне моды на бороду решили открыть премиальную мужскую парикмахерскую, отстроившись от салонов, предоставляющих услуги для хипстеров.</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--06">
+                            <div class="news__data"><time datetime="2016-04-22">22.04.2016</time></div>
+
+                            <h3 class="news__subtitle">Здесь бреют по-королевски!</h3>
+
+                            <div class="news__content">
+                                <p>Доброго времени суток, джентльмены! У нас для Вас замечательная новость! Вчера наши мастера прошли аттестацию в Привилегированном клубе Английского Королевского Бритья от Truefitt&Hill.</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--05">
+                            <div class="news__data"><time datetime="2016-03-05">05.03.2016</time></div>
+
+                            <h3 class="news__subtitle">О нас пишут</h3>
+
+                            <div class="news__content">
+                                <p>Джентельмены! Читайте о нашем мужском пространстве Mr. Grek в апрельcком выпуске журнала Собака.ru и на сайте журнала в разделе "мода и красота".</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--04">
+                            <div class="news__data"><time datetime="2016-03-24">24.03.2016</time></div>
+
+                            <h3 class="news__subtitle">Новая услуга</h3>
+
+                            <div class="news__content">
+                                <p>Джентльмены! У Нас есть замечательная новость! В преддверии сезона свадеб мы предлагаем женихам Джентльменский набор "Все включено"! У нас есть целый комплекс услуг,который завершит Ваш образ! Мы считаем,что не только невесты перед знаменательным днём бракосочетания должны проводить время в салонах красоты и приводить себя в порядок!</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--03">
+                            <div class="news__data"><time datetime="2016-03-09">09.03.16</time></div>
+
+                            <h3 class="news__subtitle">Розыгрыш Apple watch!</h3>
+
+                            <div class="news__content">
+                                <p>Внимание! С 09.03.16 по 18.05.16 мы проводим розыгрыш, где главным призом будут Apple Watch Sport и поощрительные призы: косметика от Trufiit & Hill и сертификат от Mr. Grek на любую услугу! Для участия необходимо:</p>
+
+                                <ul>
+                                    <li>записаться на любую услугу в Mr. Grek</li>
+                                    <li>подписаться на Mr. Grek в instagram (mister.grek)</li>
+                                </ul>
+
+                                <p>После выполнения услуги Вам будет присвоен индивидуальный номер, который вы опустите в чашу! 19 мая 2016 на маленьком фуршете в Mr. Grek мы определим победителей! Желаем удачи!</p>
+
+                                <p><strong>Запись по телефону: 8-921-933-17-00</strong></p>
+
+                                <p>А для наших постоянных Гостей мы устроим беспрецедентный розыгрыш, где главным призом будет эксклюзивный, деревянный мотоцикл, представленный у нас в Mr. Grek.</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--02">
+                            <div class="news__data"><time datetime="2016-02-20">20.02.2016</time></div>
+
+                            <h3 class="news__subtitle">Чистка обуви</h3>
+
+                            <div class="news__content">
+                                <p>Помните знаменитую фразу из легендарного советского кинофильма «Москва слезам не верит», когда главный герой произносит: «Я сам терпеть не могу грязную обувь!». Под этими словами может подписаться каждый мужчина. Красивая, ухоженная обувь для современного представителя сильного пола – это не просто признак опрятности, а принцип. Ведь любой, даже самый изысканный образ, можно легко перечеркнуть нечищенными туфлями. А у вас есть время заниматься своей обувью? А специальное оборудование и косметика для правильно ухода за кожей или нубуком? У нас есть всё! Пока волшебные руки мастеров нашего пространства будут работать над вашим образом, ваша обувь тоже сможет наслаждаться бережным уходом с применением лучших средств - для блестящего результата! В ближайшее время в нашем мужском пространстве будут доступны услуги:</p>
+                                <ul>
+                                    <li>чистка обуви;</li>
+                                    <li>ремонт обуви;</li>
+                                    <li>реставрация обуви;</li>
+                                    <li>хранение (консервация);</li>
+                                    <li>курьерская доставка отремонтированной обуви на дом или в офис.</li>
+                                </ul>
+                                <p>Наши мастера гарантируют премиальный уход за обувью и непревзойденный результат.</p>
+                            </div>
+                    </div>
+
+                    <div class="news__slider-item service__slider-item service__slider-item--01">
+                            <div class="news__data"><time datetime="2016-02-19">19.02.2016</time></div>
+
+                            <h3 class="news__subtitle">Мы открылись</h3>
+
+                            <div class="news__content">
+                                <p>Мужское пространство Mr.Grek открыл свои двери 19 февраля! Это не просто спа-салон для мужчин, а настоящая мужская территория, где наши гости могут и заботиться о своей внешности, отдыхать, общаться, и параллельно делать ряд полезных вещей. Например, пообедать перед поездкой в офис, заказать мойку машины или чистку обуви. Только лучшие мастера, лучшая косметика и средства по уходу – мы собрали в одном месте всё, что необходимо современному, активному, успешному мужчине. Становитесь нашим клиентом, будьте модными и почувствуйте настоящий комфорт и удовольствие от каждой процедуры!</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <h2 class="footer__title -nomargin-top line">Контакты</h2>
+
+                <div class="footer__nav">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="" class="footer__link -white">Главная</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">О Mr.Grek</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">О косметике</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">Галерея</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">Видеогалерея</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">Контакты</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">Услуги</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">Наша команда</a></li>
+                        <li class="footer__item"><a href="" class="footer__link -white">Новости</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <div class="footer__contact-list">
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-caption">Телефон:</span>
+                            <a href="tel:+78129331700" class="footer__contact-link -white">+7 812 933 17 00</a>
+                        </div>
+
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-caption">Адрес:</span>
+                            <span class="footer__contact-link">Кораблестроителей д.14, Park inn by Radisson</span>
+                        </div>
+
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-caption">Почта:</span>
+                            <a href="mailto:info@mrgrek.com" class="footer__contact-link -white">info@mrgrek.com</a>
+                        </div>
+
+                        <div class="footer__contact-item">
+                            <span class="footer__contact-caption">Мы в:</span>
+                            <a href="https://www.instagram.com/mister.grek/" class="footer__contact-link footer__contact-link--social">instagram</a> /
+                            <a href="https://vk.com/mister.grek" class="footer__contact-link footer__contact-link--social">vk.com</a> /
+                            <a href="https://www.facebook.com/mistergrek/" class="footer__contact-link footer__contact-link--social">facebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer__made">Сайт разработан компанией <a href="borodaboroda.com" class="footer__made-link -gray" target="_blank">BORODA</a></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
+</body>
+</html>
