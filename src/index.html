@@ -47,37 +47,13 @@
   <link href="css/font.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 
-
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>-->
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <!--<script src="https://use.fontawesome.com/da01d10ace.js"></script>-->
-  <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-
-  <script src="js/vendor/hammer.min.js"></script>
-  <script src="js/vendor/hammer-time.min.js"></script>
-  <script src="js/vendor/jquery.hammer.js"></script>
-  <!--<script src="js/vendor/jquery.validate.min.js"></script>-->
-  <!--<script src="js/vendor/jquery.val.js"></script>-->
-  <script src="js/assist.js"></script>
-  <script src="js/jquery.map.js"></script>
-  <script src="js/jquery.startscreen.js"></script>
-  <script src="js/jquery.nav.js"></script>
-  <script src="js/jquery.sliders.js"></script>
-  <script src="js/jquery.tabs.js"></script>
-  <script src="js/jquery.modal.js"></script>
-  <script src="js/jquery.carousel.js"></script>
-  <script src="js/jquery.dropdown.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/jquery.page-nav.js"></script>
-
 </head>
 <body>
 
-<?php
-include ('sender.php');
-?>
+  <?php
+  include ('sender.php');
+  ?>
 
   <div class="page__wrapper">
 
@@ -958,36 +934,53 @@ include ('sender.php');
     </div>
   </div>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-  (function (d, w, c) {
-    (w[c] = w[c] || []).push(function() {
-      try {
-        w.yaCounter35659150 = new Ya.Metrika({
-          id:35659150,
-          clickmap:true,
-          trackLinks:true,
-          accurateTrackBounce:true,
-          webvisor:true
-        });
-      } catch(e) { }
-    });
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter35659150 = new Ya.Metrika({
+            id:35659150,
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+          });
+        } catch(e) { }
+      });
 
-    var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = "https://mc.yandex.ru/metrika/watch.js";
+      var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-    if (w.opera == "[object Opera]") {
-      d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-  })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
   <script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+
+  <script src="js/vendor/hammer.min.js"></script>
+  <script src="js/vendor/hammer-time.min.js"></script>
+  <script src="js/vendor/jquery.hammer.js"></script>
+  <script src="js/assist.js"></script>
+  <script src="js/jquery.map.js"></script>
+  <script src="js/jquery.startscreen.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/jquery.sliders.js"></script>
+  <script src="js/jquery.tabs.js"></script>
+  <script src="js/jquery.modal.js"></script>
+  <script src="js/jquery.carousel.js"></script>
+  <script src="js/jquery.dropdown.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/jquery.page-nav.js"></script>
 </body>
 </html>

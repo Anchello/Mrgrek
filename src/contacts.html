@@ -46,19 +46,220 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/font.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
-    <!--<link href="less/style.less" rel="stylesheet/less" type="text/css">-->
-    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+</head>
+<body>
+    <?php
+    include ('sender.php');
+    ?>
 
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>-->
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>-->
+    <div class="page__wrapper">
+        <div class="mobile-menu__close">
+            <span class="icon icon--arrow-back" ></span>
+        </div>
+
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <div class="container">
+                    <ul class="mobile-nav__sublist mobile-nav__sublist--more">
+                        <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                        <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
+                        <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
+                        <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
+                        <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
+                        <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
+                        <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
+                    </ul>
+
+                    <ul class="mobile-nav__sublist mobile-nav__sublist--service">
+                        <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                        <li class="mobile-nav__subitem"><a href="service.html" class="mobile-nav__subitem-link">Наши услуги</a></li>
+                        <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
+                        <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
+                        <li class="mobile-nav__subitem"><a href="gift.html" class="mobile-nav__subitem-link">Подарки</a></li>
+                    </ul>
+
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link mobile-nav__next" data-sublist="more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
+                        </li>
+                        <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link mobile-nav__next" data-sublist="service">Услуги<span class="icon icon--arrow-right"></span></a>
+                        </li>
+                        <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav__contact">
+                <div class="container">
+                    <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+                    <span class="contact__address">ул. Кораблестроителей д.14,</span>
+                    <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+                </div>
+            </div>
+        </div>
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <a href="index.html" class="main-logo">
+                            <img src="svg/logo_white.svg" alt="логотип">
+                        </a>
+                    </div>
+
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
+                            <li class="header-nav__item header-nav__item--more">
+                                <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
+
+                                <ul class="header-nav__sublist header-nav__sublist--more">
+                                    <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
+                                    <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
+                                    <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
+                                    <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
+                                    <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
+                                    <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                            <li class="header-nav__item header-nav__item--more">
+                                <a class="header-nav__link">Услуги<span class="icon icon--arrow"></span></a>
+
+                                <ul class="header-nav__sublist header-nav__sublist--service">
+                                    <li class="header-nav__subitem"><a href="service.html" class="header-nav__subitem-link">Наши услуги</a></li>
+                                    <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
+                                    <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
+                                    <li class="header-nav__subitem"><a href="gift.html" class="header-nav__subitem-link">Подарки</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-contact">
+                        <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+                        <span class="contact__address">ул. Кораблестроителей д.14,</span>
+                        <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+                    </div>
+
+                    <div class="header__icon-menu">
+                        <span class="icon icon--menu" ></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="contacts">
+            <div class="contacts__wrapper contacts__wrapper--higher">
+                <div class="contacts__form">
+                    <h2 class="contacts__title -nomargin-top line">Контакты</h2>
+
+                    <div class="contacts__text">
+                        у вас есть вопросы или предложения?<br>
+                        Напишите нам:
+                    </div>
+
+                    <form action="" class="validate" method="post">
+                        <input type="text" class="textfield" name="name" placeholder="Имя" required>
+                        <input type="tel" class="textfield" name="tel" placeholder="Номер телефона" required>
+                        <input type="text" class="textfield" name="question" placeholder="Ваш вопрос" required>
+                        <button class="button" type="submit" name="question_button">Задать вопрос</button>
+                    </form>
+                </div>
+
+                <div class="contacts__info">
+                    <div class="contacts__item">
+                        <div class="contacts__item-caption">Почта:</div>
+                        <a href="mailto:info@mrgrek.com" class="contacts__item-link -nounderline">info@mrgrek.com</a>
+                    </div>
+
+                    <div class="contacts__item">
+                        <div class="contacts__item-caption">Адрес:</div>
+                        <span class="contacts__item-link contacts__item-link--nounderline">Кораблестроителей д.14, Park inn by Radisson</span>
+                    </div>
+
+                    <div class="contacts__item">
+                        <div class="contacts__item-caption">Телефон:</div>
+                        <a href="tel:+78129331700" class="contacts__item-link -nounderline">933 17 00</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts__wrapper">
+                <div class="map" data-lat="59.939019" data-long="30.214687" data-zoom="16" data-address="Кораблестроителей д.14"></div>
+            </div>
+        </div>
+
+        <div class="social-networks">
+            <div class="container">
+                    <div class="social-networks__nav">
+                        <span class="button button--gray social-networks__nav-item tab"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</span>
+
+                        <span class="button button--gray social-networks__nav-item tab"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</span>
+
+                        <span class="button button--gray social-networks__nav-item tab"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</span>
+                    </div>
+
+                    <div class="social-networks__wrapper tab__wrapper">
+                        <div class="social-networks__item tab__article">
+                            <div class="social-networks__item" id="vk_groups"></div>
+                        </div>
+
+                        <div class="social-networks__item tab__article">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmistergrek%2F&tabs=timeline&width=450&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        </div>
+
+                        <div class="social-networks__item tab__article">
+                            <iframe src="//lightwidget.com/widgets/e8f5c473d5df5b028d977a454b04f892.html" id="lightwidget_e8f5c473d5" name="lightwidget_e8f5c473d5"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 460px; height: 460px; border: 0; overflow: hidden;"></iframe>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter35659150 = new Ya.Metrika({
+                        id:35659150,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/da01d10ace.js"></script>
     <script src="//lightwidget.com/widgets/lightwidget.js"></script>
     <script src="//vk.com/js/api/openapi.js?122" type="text/javascript"></script>
 
-    <!--<script src="js/vendor/jquery.validate.min.js"></script>-->
-    <!--<script src="js/vendor/jquery.val.js"></script>-->
-
+    <script src="js/init.js"></script>
     <script src="js/jquery.map.js"></script>
     <script src="js/jquery.startscreen.js"></script>
     <script src="js/jquery.nav.js"></script>
@@ -67,219 +268,9 @@
     <script src="js/jquery.dropdown.js"></script>
     <script src="js/jquery.carousel.js"></script>
     <script src="js/jquery.modal.js"></script>
-    <script src="js/init.js"></script>
 
-</head>
-<body>
-
-<?php
-include ('sender.php');
-?>
-
-<div class="page__wrapper">
-    <div class="mobile-menu__close">
-        <span class="icon icon--arrow-back" ></span>
-    </div>
-
-    <div class="mobile-menu">
-        <nav class="mobile-nav">
-            <div class="container">
-                <ul class="mobile-nav__sublist mobile-nav__sublist--more">
-                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
-                    <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
-                    <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
-                    <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
-                    <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
-                    <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
-                    <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
-                </ul>
-
-                <ul class="mobile-nav__sublist mobile-nav__sublist--service">
-                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
-                    <li class="mobile-nav__subitem"><a href="service.html" class="mobile-nav__subitem-link">Наши услуги</a></li>
-                    <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
-                    <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
-                    <li class="mobile-nav__subitem"><a href="gift.html" class="mobile-nav__subitem-link">Подарки</a></li>
-                </ul>
-
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link mobile-nav__next" data-sublist="more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
-                    </li>
-                    <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link mobile-nav__next" data-sublist="service">Услуги<span class="icon icon--arrow-right"></span></a>
-                    </li>
-                    <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="mobile-nav__contact">
-            <div class="container">
-                <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
-                <span class="contact__address">ул. Кораблестроителей д.14,</span>
-                <!--<span class="contact__address">Петровская наб., д. 15</span>-->
-            </div>
-        </div>
-    </div>
-
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header__row">
-                <div class="header__logo">
-                    <a href="index.html" class="main-logo">
-                        <img src="svg/logo_white.svg" alt="логотип">
-                    </a>
-                </div>
-
-                <nav class="header-nav">
-                    <ul class="header-nav__list">
-                        <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
-                        <li class="header-nav__item header-nav__item--more">
-                            <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
-
-                            <ul class="header-nav__sublist header-nav__sublist--more">
-                                <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
-                                <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
-                                <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
-                                <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
-                                <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
-                                <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
-                            </ul>
-                        </li>
-                        <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
-                        <li class="header-nav__item header-nav__item--more">
-                            <a class="header-nav__link">Услуги<span class="icon icon--arrow"></span></a>
-
-                            <ul class="header-nav__sublist header-nav__sublist--service">
-                                <li class="header-nav__subitem"><a href="service.html" class="header-nav__subitem-link">Наши услуги</a></li>
-                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
-                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
-                                <li class="header-nav__subitem"><a href="gift.html" class="header-nav__subitem-link">Подарки</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-contact">
-                    <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
-                    <span class="contact__address">ул. Кораблестроителей д.14,</span>
-                    <!--<span class="contact__address">Петровская наб., д. 15</span>-->
-                </div>
-
-                <div class="header__icon-menu">
-                    <span class="icon icon--menu" ></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="contacts">
-        <div class="contacts__wrapper contacts__wrapper--higher">
-            <div class="contacts__form">
-                <h2 class="contacts__title -nomargin-top line">Контакты</h2>
-
-                <div class="contacts__text">
-                    у вас есть вопросы или предложения?<br>
-                    Напишите нам:
-                </div>
-
-                <form action="" class="validate" method="post">
-                    <input type="text" class="textfield" name="name" placeholder="Имя" required>
-                    <input type="tel" class="textfield" name="tel" placeholder="Номер телефона" required>
-                    <input type="text" class="textfield" name="question" placeholder="Ваш вопрос" required>
-                    <button class="button" type="submit" name="question_button">Задать вопрос</button>
-                </form>
-            </div>
-
-            <div class="contacts__info">
-                <div class="contacts__item">
-                    <div class="contacts__item-caption">Почта:</div>
-                    <a href="mailto:info@mrgrek.com" class="contacts__item-link -nounderline">info@mrgrek.com</a>
-                </div>
-
-                <div class="contacts__item">
-                    <div class="contacts__item-caption">Адрес:</div>
-                    <span class="contacts__item-link contacts__item-link--nounderline">Кораблестроителей д.14, Park inn by Radisson</span>
-                </div>
-
-                <div class="contacts__item">
-                    <div class="contacts__item-caption">Телефон:</div>
-                    <a href="tel:+78129331700" class="contacts__item-link -nounderline">933 17 00</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="contacts__wrapper">
-            <div class="map" data-lat="59.939019" data-long="30.214687" data-zoom="16" data-address="Кораблестроителей д.14"></div>
-        </div>
-    </div>
-
-    <div class="social-networks">
-        <div class="container">
-                <div class="social-networks__nav">
-                    <span class="button button--gray social-networks__nav-item tab"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</span>
-
-                    <span class="button button--gray social-networks__nav-item tab"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</span>
-
-                    <span class="button button--gray social-networks__nav-item tab"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</span>
-                </div>
-
-                <div class="social-networks__wrapper tab__wrapper">
-                    <div class="social-networks__item tab__article">
-                        <div class="social-networks__item" id="vk_groups"></div>
-                    </div>
-
-                    <div class="social-networks__item tab__article">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmistergrek%2F&tabs=timeline&width=450&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="450" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                    </div>
-
-                    <div class="social-networks__item tab__article">
-                        <iframe src="//lightwidget.com/widgets/e8f5c473d5df5b028d977a454b04f892.html" id="lightwidget_e8f5c473d5" name="lightwidget_e8f5c473d5"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 460px; height: 460px; border: 0; overflow: hidden;"></iframe>
-                    </div>
-                </div>
-        </div>
-    </div>
-</div>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter35659150 = new Ya.Metrika({
-                    id:35659150,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
-
-<script type="text/javascript">
-    VK.Widgets.Group("vk_groups", {mode: 0, width: "420", height: "400", color1: 'FFFFFF', color2: '5E81A8', color3: '5E81A8'}, 116377786);
-</script>
+    <script type="text/javascript">
+        VK.Widgets.Group("vk_groups", {mode: 0, width: "420", height: "400", color1: 'FFFFFF', color2: '5E81A8', color3: '5E81A8'}, 116377786);
+    </script>
 </body>
 </html>

@@ -47,12 +47,333 @@
     <link href="css/font.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/blueimp-gallery.min.css" rel="stylesheet" >
-    <!--<link href="less/style.less" rel="stylesheet/less" type="text/css">-->
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.1/less.min.js"></script>-->
+</head>
+<body>
+    <div class="page__wrapper">
+        <div class="mobile-menu__close">
+            <span class="icon icon--arrow-back" ></span>
+        </div>
+
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <div class="container">
+                    <ul class="mobile-nav__sublist mobile-nav__sublist--more">
+                        <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                        <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
+                        <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
+                        <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
+                        <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
+                        <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
+                        <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
+                    </ul>
+
+                    <ul class="mobile-nav__sublist mobile-nav__sublist--service">
+                        <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                        <li class="mobile-nav__subitem"><a href="service.html" class="mobile-nav__subitem-link">Наши услуги</a></li>
+                        <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
+                        <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
+                        <li class="mobile-nav__subitem"><a href="gift.html" class="mobile-nav__subitem-link">Подарки</a></li>
+                    </ul>
+
+                    <ul class="mobile-nav__list">
+                        <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link mobile-nav__next" data-sublist="more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
+                        </li>
+                        <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
+                        <li class="mobile-nav__item">
+                            <a class="mobile-nav__link mobile-nav__next" data-sublist="service">Услуги<span class="icon icon--arrow-right"></span></a>
+                        </li>
+                        <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="mobile-nav__contact">
+                <div class="container">
+                    <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+                    <span class="contact__address">ул. Кораблестроителей д.14,</span>
+                    <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+                </div>
+            </div>
+        </div>
+
+        <header class="header" id="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__logo">
+                        <a href="index.html" class="main-logo">
+                            <img src="svg/logo_white.svg" alt="логотип">
+                        </a>
+                    </div>
+
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
+                            <li class="header-nav__item header-nav__item--more">
+                                <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
+
+                                <ul class="header-nav__sublist header-nav__sublist--more">
+                                    <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
+                                    <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
+                                    <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
+                                    <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
+                                    <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
+                                    <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
+                                </ul>
+                            </li>
+                            <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
+                            <li class="header-nav__item header-nav__item--more">
+                                <a class="header-nav__link">Услуги<span class="icon icon--arrow"></span></a>
+
+                                <ul class="header-nav__sublist header-nav__sublist--service">
+                                    <li class="header-nav__subitem"><a href="service.html" class="header-nav__subitem-link">Наши услуги</a></li>
+                                    <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
+                                    <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
+                                    <li class="header-nav__subitem"><a href="gift.html" class="header-nav__subitem-link">Подарки</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-contact">
+                        <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
+                        <span class="contact__address">ул. Кораблестроителей д.14,</span>
+                        <!--<span class="contact__address">Петровская наб., д. 15</span>-->
+                    </div>
+
+                    <div class="header__icon-menu">
+                        <span class="icon icon--menu" ></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery__row">
+                    <h2 class="gallery__title -nomargin-top line">Галерея</h2>
+
+                    <div class="gallery__nav">
+                        <ul class="gallery__nav-list">
+                            <li class="gallery__nav-item tab">Открытие Mr.Grek</li>
+                            <li class="gallery__nav-item tab">Интерьер</li>
+                            <li class="gallery__nav-item tab">Бургеры и напитки</li>
+                            <li class="gallery__nav-item tab">Чистка обуви</li>
+                            <li class="gallery__nav-item tab">Юбилей 3 месяца</li>
+                        </ul>
+                    </div>
+
+                    <div class="gallery__wrapper tab__wrapper">
+                        <div class="gallery__article tab__article" id="links">
+                            <a href="img/gallery_01/1.jpg" class="gallery__item" style="background-image: url(img/gallery_01/1-mini.jpg);"></a>
+                            <a href="img/gallery_01/2.jpg" class="gallery__item" style="background-image: url(img/gallery_01/2-mini.jpg);"></a>
+                            <a href="img/gallery_01/3.jpg" class="gallery__item" style="background-image: url(img/gallery_01/3-mini.jpg);"></a>
+                            <a href="img/gallery_01/4.jpg" class="gallery__item" style="background-image: url(img/gallery_01/4-mini.jpg);"></a>
+                            <a href="img/gallery_01/5.jpg" class="gallery__item" style="background-image: url(img/gallery_01/5-mini.jpg);"></a>
+                            <a href="img/gallery_01/6.jpg" class="gallery__item" style="background-image: url(img/gallery_01/6-mini.jpg);"></a>
+                            <a href="img/gallery_01/7.jpg" class="gallery__item" style="background-image: url(img/gallery_01/7-mini.jpg);"></a>
+                            <a href="img/gallery_01/8.jpg" class="gallery__item" style="background-image: url(img/gallery_01/8-mini.jpg);"></a>
+                            <a href="img/gallery_01/9.jpg" class="gallery__item" style="background-image: url(img/gallery_01/9-mini.jpg);"></a>
+                            <a href="img/gallery_01/10.jpg" class="gallery__item" style="background-image: url(img/gallery_01/10-mini.jpg);"></a>
+                            <a href="img/gallery_01/11.jpg" class="gallery__item" style="background-image: url(img/gallery_01/11-mini.jpg);"></a>
+                            <a href="img/gallery_01/12.jpg" class="gallery__item" style="background-image: url(img/gallery_01/12-mini.jpg);"></a>
+                            <a href="img/gallery_01/13.jpg" class="gallery__item" style="background-image: url(img/gallery_01/13-mini.jpg);"></a>
+                            <a href="img/gallery_01/14.jpg" class="gallery__item" style="background-image: url(img/gallery_01/14-mini.jpg);"></a>
+                            <a href="img/gallery_01/15.jpg" class="gallery__item" style="background-image: url(img/gallery_01/15-mini.jpg);"></a>
+                            <a href="img/gallery_01/16.jpg" class="gallery__item" style="background-image: url(img/gallery_01/16-mini.jpg);"></a>
+                            <a href="img/gallery_01/17.jpg" class="gallery__item" style="background-image: url(img/gallery_01/17-mini.jpg);"></a>
+                            <a href="img/gallery_01/18.jpg" class="gallery__item" style="background-image: url(img/gallery_01/18-mini.jpg);"></a>
+                            <a href="img/gallery_01/19.jpg" class="gallery__item" style="background-image: url(img/gallery_01/19-mini.jpg);"></a>
+                            <a href="img/gallery_01/20.jpg" class="gallery__item" style="background-image: url(img/gallery_01/20-mini.jpg);"></a>
+                        </div>
+
+                        <div class="gallery__article tab__article" id="gallery_02">
+                            <a href="img/gallery_02/1.jpg" class="gallery__item" style="background-image: url(img/gallery_02/1-mini.jpg);"></a>
+                            <a href="img/gallery_02/2.jpg" class="gallery__item" style="background-image: url(img/gallery_02/2-mini.jpg);"></a>
+                            <a href="img/gallery_02/3.jpg" class="gallery__item" style="background-image: url(img/gallery_02/3-mini.jpg);"></a>
+                            <a href="img/gallery_02/4.jpg" class="gallery__item" style="background-image: url(img/gallery_02/4-mini.jpg);"></a>
+                            <a href="img/gallery_02/5.jpg" class="gallery__item" style="background-image: url(img/gallery_02/5-mini.jpg);"></a>
+                            <a href="img/gallery_02/6.jpg" class="gallery__item" style="background-image: url(img/gallery_02/6-mini.jpg);"></a>
+                            <a href="img/gallery_02/7.jpg" class="gallery__item" style="background-image: url(img/gallery_02/7-mini.jpg);"></a>
+                            <a href="img/gallery_02/8.jpg" class="gallery__item" style="background-image: url(img/gallery_02/8-mini.jpg);"></a>
+                            <a href="img/gallery_02/9.jpg" class="gallery__item" style="background-image: url(img/gallery_02/9-mini.jpg);"></a>
+                            <a href="img/gallery_02/10.jpg" class="gallery__item" style="background-image: url(img/gallery_02/10-mini.jpg);"></a>
+                            <a href="img/gallery_02/11.jpg" class="gallery__item" style="background-image: url(img/gallery_02/11-mini.jpg);"></a>
+                            <a href="img/gallery_02/12.jpg" class="gallery__item" style="background-image: url(img/gallery_02/12-mini.jpg);"></a>
+                            <a href="img/gallery_02/13.jpg" class="gallery__item" style="background-image: url(img/gallery_02/13-mini.jpg);"></a>
+                            <a href="img/gallery_02/14.jpg" class="gallery__item" style="background-image: url(img/gallery_02/14-mini.jpg);"></a>
+                            <a href="img/gallery_02/15.jpg" class="gallery__item" style="background-image: url(img/gallery_02/15-mini.jpg);"></a>
+                            <a href="img/gallery_02/16.jpg" class="gallery__item" style="background-image: url(img/gallery_02/16-mini.jpg);"></a>
+                            <a href="img/gallery_02/17.jpg" class="gallery__item" style="background-image: url(img/gallery_02/17-mini.jpg);"></a>
+                            <a href="img/gallery_02/18.jpg" class="gallery__item" style="background-image: url(img/gallery_02/18-mini.jpg);"></a>
+                            <a href="img/gallery_02/19.jpg" class="gallery__item" style="background-image: url(img/gallery_02/19-mini.jpg);"></a>
+                            <a href="img/gallery_02/20.jpg" class="gallery__item" style="background-image: url(img/gallery_02/20-mini.jpg);"></a>
+                            <a href="img/gallery_02/21.jpg" class="gallery__item" style="background-image: url(img/gallery_02/21.jpg);"></a>
+                            <a href="img/gallery_02/22.jpg" class="gallery__item" style="background-image: url(img/gallery_02/22.jpg);"></a>
+                        </div>
+
+                        <div class="gallery__article tab__article" id="gallery_03">
+                            <a href="img/gallery_03/1.jpg" class="gallery__item" style="background-image: url(img/gallery_03/1.jpg);"></a>
+                            <a href="img/gallery_03/2.jpg" class="gallery__item" style="background-image: url(img/gallery_03/2.jpg);"></a>
+                            <a href="img/gallery_03/3.jpg" class="gallery__item" style="background-image: url(img/gallery_03/3.jpg);"></a>
+                            <a href="img/gallery_03/4.jpg" class="gallery__item" style="background-image: url(img/gallery_03/4.jpg);"></a>
+                            <a href="img/gallery_03/5.jpg" class="gallery__item" style="background-image: url(img/gallery_03/5.jpg);"></a>
+                        </div>
+
+                        <div class="gallery__article tab__article" id="gallery_04">
+                            <a href="img/gallery_04/1.jpg" class="gallery__item" style="background-image: url(img/gallery_04/1.jpg);"></a>
+                            <a href="img/gallery_04/2.jpg" class="gallery__item" style="background-image: url(img/gallery_04/2.jpg);"></a>
+                            <a href="img/gallery_04/3.jpg" class="gallery__item" style="background-image: url(img/gallery_04/3.jpg);"></a>
+                            <a href="img/gallery_04/4.jpg" class="gallery__item" style="background-image: url(img/gallery_04/4.jpg);"></a>
+                            <a href="img/gallery_04/5.jpg" class="gallery__item" style="background-image: url(img/gallery_04/5.jpg);"></a>
+                            <a href="img/gallery_04/6.jpg" class="gallery__item" style="background-image: url(img/gallery_04/6.jpg);"></a>
+                        </div>
+
+                        <div class="gallery__article tab__article" id="gallery_05">
+                            <a href="img/gallery_05/1.jpg" class="gallery__item" style="background-image: url(img/gallery_05/1.jpg);"></a>
+                            <a href="img/gallery_05/2.jpg" class="gallery__item" style="background-image: url(img/gallery_05/2.jpg);"></a>
+                            <a href="img/gallery_05/3.jpg" class="gallery__item" style="background-image: url(img/gallery_05/3.jpg);"></a>
+                            <a href="img/gallery_05/4.jpg" class="gallery__item" style="background-image: url(img/gallery_05/4.jpg);"></a>
+                            <a href="img/gallery_05/5.jpg" class="gallery__item" style="background-image: url(img/gallery_05/5.jpg);"></a>
+                            <a href="img/gallery_05/6.jpg" class="gallery__item" style="background-image: url(img/gallery_05/6.jpg);"></a>
+                            <a href="img/gallery_05/7.jpg" class="gallery__item" style="background-image: url(img/gallery_05/7.jpg);"></a>
+                            <a href="img/gallery_05/8.jpg" class="gallery__item" style="background-image: url(img/gallery_05/8.jpg);"></a>
+                            <a href="img/gallery_05/9.jpg" class="gallery__item" style="background-image: url(img/gallery_05/9.jpg);"></a>
+                            <a href="img/gallery_05/10.jpg" class="gallery__item" style="background-image: url(img/gallery_05/10.jpg);"></a>
+                            <a href="img/gallery_05/11.jpg" class="gallery__item" style="background-image: url(img/gallery_05/11.jpg);"></a>
+                            <a href="img/gallery_05/12.jpg" class="gallery__item" style="background-image: url(img/gallery_05/12.jpg);"></a>
+                            <a href="img/gallery_05/13.jpg" class="gallery__item" style="background-image: url(img/gallery_05/13.jpg);"></a>
+                            <a href="img/gallery_05/14.jpg" class="gallery__item" style="background-image: url(img/gallery_05/14.jpg);"></a>
+                            <a href="img/gallery_05/15.jpg" class="gallery__item" style="background-image: url(img/gallery_05/15.jpg);"></a>
+                            <a href="img/gallery_05/16.jpg" class="gallery__item" style="background-image: url(img/gallery_05/16.jpg);"></a>
+                            <a href="img/gallery_05/17.jpg" class="gallery__item" style="background-image: url(img/gallery_05/17.jpg);"></a>
+                            <a href="img/gallery_05/18.jpg" class="gallery__item" style="background-image: url(img/gallery_05/18.jpg);"></a>
+                            <a href="img/gallery_05/19.jpg" class="gallery__item" style="background-image: url(img/gallery_05/19.jpg);"></a>
+                            <a href="img/gallery_05/20.jpg" class="gallery__item" style="background-image: url(img/gallery_05/20.jpg);"></a>
+                            <a href="img/gallery_05/21.jpg" class="gallery__item" style="background-image: url(img/gallery_05/21.jpg);"></a>
+                            <a href="img/gallery_05/22.jpg" class="gallery__item" style="background-image: url(img/gallery_05/22.jpg);"></a>
+                            <a href="img/gallery_05/23.jpg" class="gallery__item" style="background-image: url(img/gallery_05/23.jpg);"></a>
+                            <a href="img/gallery_05/24.jpg" class="gallery__item" style="background-image: url(img/gallery_05/24.jpg);"></a>
+                            <a href="img/gallery_05/25.jpg" class="gallery__item" style="background-image: url(img/gallery_05/25.jpg);"></a>
+                            <a href="img/gallery_05/26.jpg" class="gallery__item" style="background-image: url(img/gallery_05/26.jpg);"></a>
+                            <a href="img/gallery_05/27.jpg" class="gallery__item" style="background-image: url(img/gallery_05/27.jpg);"></a>
+                            <a href="img/gallery_05/28.jpg" class="gallery__item" style="background-image: url(img/gallery_05/28.jpg);"></a>
+                            <a href="img/gallery_05/29.jpg" class="gallery__item" style="background-image: url(img/gallery_05/29.jpg);"></a>
+                            <a href="img/gallery_05/30.jpg" class="gallery__item" style="background-image: url(img/gallery_05/30.jpg);"></a>
+                            <a href="img/gallery_05/31.jpg" class="gallery__item" style="background-image: url(img/gallery_05/31.jpg);"></a>
+                            <a href="img/gallery_05/32.jpg" class="gallery__item" style="background-image: url(img/gallery_05/32.jpg);"></a>
+                            <a href="img/gallery_05/33.jpg" class="gallery__item" style="background-image: url(img/gallery_05/33.jpg);"></a>
+                            <a href="img/gallery_05/34.jpg" class="gallery__item" style="background-image: url(img/gallery_05/34.jpg);"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="blueimp-gallery" class="blueimp-gallery  blueimp-gallery-controls">
+            <div class="slides"></div>
+            <h3 class="title"></h3>
+            <a class="prev">‹</a>
+            <a class="next">›</a>
+            <a class="close">×</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <h2 class="footer__title -nomargin-top line">Контакты</h2>
+
+                    <div class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="" class="footer__link -white">Главная</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">О Mr.Grek</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">О косметике</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">Галерея</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">Видеогалерея</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">Контакты</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">Услуги</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">Наша команда</a></li>
+                            <li class="footer__item"><a href="" class="footer__link -white">Новости</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__contact">
+                        <div class="footer__contact-list">
+                            <div class="footer__contact-item">
+                                <span class="footer__contact-caption">Телефон:</span>
+                                <a href="tel:+78129331700" class="footer__contact-link -white">+7 812 933 17 00</a>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <span class="footer__contact-caption">Адрес:</span>
+                                <span class="footer__contact-link">Кораблестроителей д.14, Park inn by Radisson</span>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <span class="footer__contact-caption">Почта:</span>
+                                <a href="mailto:info@mrgrek.com" class="footer__contact-link -white">info@mrgrek.com</a>
+                            </div>
+
+                            <div class="footer__contact-item">
+                                <span class="footer__contact-caption">Мы в:</span>
+                                <a href="https://www.instagram.com/mister.grek/" class="footer__contact-link footer__contact-link--social">instagram</a> /
+                                <a href="https://vk.com/mister.grek" class="footer__contact-link footer__contact-link--social">vk.com</a> /
+                                <a href="https://www.facebook.com/mistergrek/" class="footer__contact-link footer__contact-link--social">facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__made">Сайт разработан компанией <a href="http://borodaboroda.com/" class="footer__made-link -gray" target="_blank">BORODA</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter35659150 = new Ya.Metrika({
+                        id:35659150,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!--<script src="https://use.fontawesome.com/da01d10ace.js"></script>-->
+    <script src="js/vendor/blueimp-gallery.min.js"></script>
+    <script src="js/popup_gallery.js"></script>
+    <script src="js/init.js"></script>
     <script src="js/jquery.map.js"></script>
     <script src="js/jquery.startscreen.js"></script>
     <script src="js/jquery.nav.js"></script>
@@ -61,329 +382,5 @@
     <script src="js/jquery.dropdown.js"></script>
     <script src="js/jquery.carousel.js"></script>
     <script src="js/jquery.modal.js"></script>
-    <script src="js/init.js"></script>
-    <script src="js/vendor/blueimp-gallery.min.js"></script>
-    <script src="js/popup_gallery.js"></script>
-
-</head>
-<body>
-<div class="page__wrapper">
-    <div class="mobile-menu__close">
-        <span class="icon icon--arrow-back" ></span>
-    </div>
-
-    <div class="mobile-menu">
-        <nav class="mobile-nav">
-            <div class="container">
-                <ul class="mobile-nav__sublist mobile-nav__sublist--more">
-                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
-                    <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
-                    <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
-                    <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
-                    <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
-                    <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
-                    <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
-                </ul>
-
-                <ul class="mobile-nav__sublist mobile-nav__sublist--service">
-                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
-                    <li class="mobile-nav__subitem"><a href="service.html" class="mobile-nav__subitem-link">Наши услуги</a></li>
-                    <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
-                    <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
-                    <li class="mobile-nav__subitem"><a href="gift.html" class="mobile-nav__subitem-link">Подарки</a></li>
-                </ul>
-
-                <ul class="mobile-nav__list">
-                    <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link mobile-nav__next" data-sublist="more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
-                    </li>
-                    <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
-                    <li class="mobile-nav__item">
-                        <a class="mobile-nav__link mobile-nav__next" data-sublist="service">Услуги<span class="icon icon--arrow-right"></span></a>
-                    </li>
-                    <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="mobile-nav__contact">
-            <div class="container">
-                <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
-                <span class="contact__address">ул. Кораблестроителей д.14,</span>
-                <!--<span class="contact__address">Петровская наб., д. 15</span>-->
-            </div>
-        </div>
-    </div>
-
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header__row">
-                <div class="header__logo">
-                    <a href="index.html" class="main-logo">
-                        <img src="svg/logo_white.svg" alt="логотип">
-                    </a>
-                </div>
-
-                <nav class="header-nav">
-                    <ul class="header-nav__list">
-                        <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
-                        <li class="header-nav__item header-nav__item--more">
-                            <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
-
-                            <ul class="header-nav__sublist header-nav__sublist--more">
-                                <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
-                                <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
-                                <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
-                                <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
-                                <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
-                                <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
-                            </ul>
-                        </li>
-                        <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
-                        <li class="header-nav__item header-nav__item--more">
-                            <a class="header-nav__link">Услуги<span class="icon icon--arrow"></span></a>
-
-                            <ul class="header-nav__sublist header-nav__sublist--service">
-                                <li class="header-nav__subitem"><a href="service.html" class="header-nav__subitem-link">Наши услуги</a></li>
-                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
-                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
-                                <li class="header-nav__subitem"><a href="gift.html" class="header-nav__subitem-link">Подарки</a></li>
-                            </ul>
-
-                        </li>
-                        <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
-                    </ul>
-                </nav>
-
-                <div class="header-contact">
-                    <a href="tel:+78129331700" class="contact__tel-main -white">933 17 00</a>
-                    <span class="contact__address">ул. Кораблестроителей д.14,</span>
-                    <!--<span class="contact__address">Петровская наб., д. 15</span>-->
-                </div>
-
-                <div class="header__icon-menu">
-                    <span class="icon icon--menu" ></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="gallery">
-        <div class="container">
-            <div class="gallery__row">
-                <h2 class="gallery__title -nomargin-top line">Галерея</h2>
-
-                <div class="gallery__nav">
-                    <ul class="gallery__nav-list">
-                        <li class="gallery__nav-item tab">Открытие Mr.Grek</li>
-                        <li class="gallery__nav-item tab">Интерьер</li>
-                        <li class="gallery__nav-item tab">Бургеры и напитки</li>
-                        <li class="gallery__nav-item tab">Чистка обуви</li>
-                        <li class="gallery__nav-item tab">Юбилей 3 месяца</li>
-                    </ul>
-                </div>
-
-                <div class="gallery__wrapper tab__wrapper">
-                    <div class="gallery__article tab__article" id="links">
-                        <a href="img/gallery_01/1.jpg" class="gallery__item" style="background-image: url(img/gallery_01/1-mini.jpg);"></a>
-                        <a href="img/gallery_01/2.jpg" class="gallery__item" style="background-image: url(img/gallery_01/2-mini.jpg);"></a>
-                        <a href="img/gallery_01/3.jpg" class="gallery__item" style="background-image: url(img/gallery_01/3-mini.jpg);"></a>
-                        <a href="img/gallery_01/4.jpg" class="gallery__item" style="background-image: url(img/gallery_01/4-mini.jpg);"></a>
-                        <a href="img/gallery_01/5.jpg" class="gallery__item" style="background-image: url(img/gallery_01/5-mini.jpg);"></a>
-                        <a href="img/gallery_01/6.jpg" class="gallery__item" style="background-image: url(img/gallery_01/6-mini.jpg);"></a>
-                        <a href="img/gallery_01/7.jpg" class="gallery__item" style="background-image: url(img/gallery_01/7-mini.jpg);"></a>
-                        <a href="img/gallery_01/8.jpg" class="gallery__item" style="background-image: url(img/gallery_01/8-mini.jpg);"></a>
-                        <a href="img/gallery_01/9.jpg" class="gallery__item" style="background-image: url(img/gallery_01/9-mini.jpg);"></a>
-                        <a href="img/gallery_01/10.jpg" class="gallery__item" style="background-image: url(img/gallery_01/10-mini.jpg);"></a>
-                        <a href="img/gallery_01/11.jpg" class="gallery__item" style="background-image: url(img/gallery_01/11-mini.jpg);"></a>
-                        <a href="img/gallery_01/12.jpg" class="gallery__item" style="background-image: url(img/gallery_01/12-mini.jpg);"></a>
-                        <a href="img/gallery_01/13.jpg" class="gallery__item" style="background-image: url(img/gallery_01/13-mini.jpg);"></a>
-                        <a href="img/gallery_01/14.jpg" class="gallery__item" style="background-image: url(img/gallery_01/14-mini.jpg);"></a>
-                        <a href="img/gallery_01/15.jpg" class="gallery__item" style="background-image: url(img/gallery_01/15-mini.jpg);"></a>
-                        <a href="img/gallery_01/16.jpg" class="gallery__item" style="background-image: url(img/gallery_01/16-mini.jpg);"></a>
-                        <a href="img/gallery_01/17.jpg" class="gallery__item" style="background-image: url(img/gallery_01/17-mini.jpg);"></a>
-                        <a href="img/gallery_01/18.jpg" class="gallery__item" style="background-image: url(img/gallery_01/18-mini.jpg);"></a>
-                        <a href="img/gallery_01/19.jpg" class="gallery__item" style="background-image: url(img/gallery_01/19-mini.jpg);"></a>
-                        <a href="img/gallery_01/20.jpg" class="gallery__item" style="background-image: url(img/gallery_01/20-mini.jpg);"></a>
-                    </div>
-
-                    <div class="gallery__article tab__article" id="gallery_02">
-                        <a href="img/gallery_02/1.jpg" class="gallery__item" style="background-image: url(img/gallery_02/1-mini.jpg);"></a>
-                        <a href="img/gallery_02/2.jpg" class="gallery__item" style="background-image: url(img/gallery_02/2-mini.jpg);"></a>
-                        <a href="img/gallery_02/3.jpg" class="gallery__item" style="background-image: url(img/gallery_02/3-mini.jpg);"></a>
-                        <a href="img/gallery_02/4.jpg" class="gallery__item" style="background-image: url(img/gallery_02/4-mini.jpg);"></a>
-                        <a href="img/gallery_02/5.jpg" class="gallery__item" style="background-image: url(img/gallery_02/5-mini.jpg);"></a>
-                        <a href="img/gallery_02/6.jpg" class="gallery__item" style="background-image: url(img/gallery_02/6-mini.jpg);"></a>
-                        <a href="img/gallery_02/7.jpg" class="gallery__item" style="background-image: url(img/gallery_02/7-mini.jpg);"></a>
-                        <a href="img/gallery_02/8.jpg" class="gallery__item" style="background-image: url(img/gallery_02/8-mini.jpg);"></a>
-                        <a href="img/gallery_02/9.jpg" class="gallery__item" style="background-image: url(img/gallery_02/9-mini.jpg);"></a>
-                        <a href="img/gallery_02/10.jpg" class="gallery__item" style="background-image: url(img/gallery_02/10-mini.jpg);"></a>
-                        <a href="img/gallery_02/11.jpg" class="gallery__item" style="background-image: url(img/gallery_02/11-mini.jpg);"></a>
-                        <a href="img/gallery_02/12.jpg" class="gallery__item" style="background-image: url(img/gallery_02/12-mini.jpg);"></a>
-                        <a href="img/gallery_02/13.jpg" class="gallery__item" style="background-image: url(img/gallery_02/13-mini.jpg);"></a>
-                        <a href="img/gallery_02/14.jpg" class="gallery__item" style="background-image: url(img/gallery_02/14-mini.jpg);"></a>
-                        <a href="img/gallery_02/15.jpg" class="gallery__item" style="background-image: url(img/gallery_02/15-mini.jpg);"></a>
-                        <a href="img/gallery_02/16.jpg" class="gallery__item" style="background-image: url(img/gallery_02/16-mini.jpg);"></a>
-                        <a href="img/gallery_02/17.jpg" class="gallery__item" style="background-image: url(img/gallery_02/17-mini.jpg);"></a>
-                        <a href="img/gallery_02/18.jpg" class="gallery__item" style="background-image: url(img/gallery_02/18-mini.jpg);"></a>
-                        <a href="img/gallery_02/19.jpg" class="gallery__item" style="background-image: url(img/gallery_02/19-mini.jpg);"></a>
-                        <a href="img/gallery_02/20.jpg" class="gallery__item" style="background-image: url(img/gallery_02/20-mini.jpg);"></a>
-                        <a href="img/gallery_02/21.jpg" class="gallery__item" style="background-image: url(img/gallery_02/21.jpg);"></a>
-                        <a href="img/gallery_02/22.jpg" class="gallery__item" style="background-image: url(img/gallery_02/22.jpg);"></a>
-                    </div>
-
-                    <div class="gallery__article tab__article" id="gallery_03">
-                        <a href="img/gallery_03/1.jpg" class="gallery__item" style="background-image: url(img/gallery_03/1.jpg);"></a>
-                        <a href="img/gallery_03/2.jpg" class="gallery__item" style="background-image: url(img/gallery_03/2.jpg);"></a>
-                        <a href="img/gallery_03/3.jpg" class="gallery__item" style="background-image: url(img/gallery_03/3.jpg);"></a>
-                        <a href="img/gallery_03/4.jpg" class="gallery__item" style="background-image: url(img/gallery_03/4.jpg);"></a>
-                        <a href="img/gallery_03/5.jpg" class="gallery__item" style="background-image: url(img/gallery_03/5.jpg);"></a>
-                    </div>
-
-                    <div class="gallery__article tab__article" id="gallery_04">
-                        <a href="img/gallery_04/1.jpg" class="gallery__item" style="background-image: url(img/gallery_04/1.jpg);"></a>
-                        <a href="img/gallery_04/2.jpg" class="gallery__item" style="background-image: url(img/gallery_04/2.jpg);"></a>
-                        <a href="img/gallery_04/3.jpg" class="gallery__item" style="background-image: url(img/gallery_04/3.jpg);"></a>
-                        <a href="img/gallery_04/4.jpg" class="gallery__item" style="background-image: url(img/gallery_04/4.jpg);"></a>
-                        <a href="img/gallery_04/5.jpg" class="gallery__item" style="background-image: url(img/gallery_04/5.jpg);"></a>
-                        <a href="img/gallery_04/6.jpg" class="gallery__item" style="background-image: url(img/gallery_04/6.jpg);"></a>
-                    </div>
-
-                    <div class="gallery__article tab__article" id="gallery_05">
-                        <a href="img/gallery_05/1.jpg" class="gallery__item" style="background-image: url(img/gallery_05/1.jpg);"></a>
-                        <a href="img/gallery_05/2.jpg" class="gallery__item" style="background-image: url(img/gallery_05/2.jpg);"></a>
-                        <a href="img/gallery_05/3.jpg" class="gallery__item" style="background-image: url(img/gallery_05/3.jpg);"></a>
-                        <a href="img/gallery_05/4.jpg" class="gallery__item" style="background-image: url(img/gallery_05/4.jpg);"></a>
-                        <a href="img/gallery_05/5.jpg" class="gallery__item" style="background-image: url(img/gallery_05/5.jpg);"></a>
-                        <a href="img/gallery_05/6.jpg" class="gallery__item" style="background-image: url(img/gallery_05/6.jpg);"></a>
-                        <a href="img/gallery_05/7.jpg" class="gallery__item" style="background-image: url(img/gallery_05/7.jpg);"></a>
-                        <a href="img/gallery_05/8.jpg" class="gallery__item" style="background-image: url(img/gallery_05/8.jpg);"></a>
-                        <a href="img/gallery_05/9.jpg" class="gallery__item" style="background-image: url(img/gallery_05/9.jpg);"></a>
-                        <a href="img/gallery_05/10.jpg" class="gallery__item" style="background-image: url(img/gallery_05/10.jpg);"></a>
-                        <a href="img/gallery_05/11.jpg" class="gallery__item" style="background-image: url(img/gallery_05/11.jpg);"></a>
-                        <a href="img/gallery_05/12.jpg" class="gallery__item" style="background-image: url(img/gallery_05/12.jpg);"></a>
-                        <a href="img/gallery_05/13.jpg" class="gallery__item" style="background-image: url(img/gallery_05/13.jpg);"></a>
-                        <a href="img/gallery_05/14.jpg" class="gallery__item" style="background-image: url(img/gallery_05/14.jpg);"></a>
-                        <a href="img/gallery_05/15.jpg" class="gallery__item" style="background-image: url(img/gallery_05/15.jpg);"></a>
-                        <a href="img/gallery_05/16.jpg" class="gallery__item" style="background-image: url(img/gallery_05/16.jpg);"></a>
-                        <a href="img/gallery_05/17.jpg" class="gallery__item" style="background-image: url(img/gallery_05/17.jpg);"></a>
-                        <a href="img/gallery_05/18.jpg" class="gallery__item" style="background-image: url(img/gallery_05/18.jpg);"></a>
-                        <a href="img/gallery_05/19.jpg" class="gallery__item" style="background-image: url(img/gallery_05/19.jpg);"></a>
-                        <a href="img/gallery_05/20.jpg" class="gallery__item" style="background-image: url(img/gallery_05/20.jpg);"></a>
-                        <a href="img/gallery_05/21.jpg" class="gallery__item" style="background-image: url(img/gallery_05/21.jpg);"></a>
-                        <a href="img/gallery_05/22.jpg" class="gallery__item" style="background-image: url(img/gallery_05/22.jpg);"></a>
-                        <a href="img/gallery_05/23.jpg" class="gallery__item" style="background-image: url(img/gallery_05/23.jpg);"></a>
-                        <a href="img/gallery_05/24.jpg" class="gallery__item" style="background-image: url(img/gallery_05/24.jpg);"></a>
-                        <a href="img/gallery_05/25.jpg" class="gallery__item" style="background-image: url(img/gallery_05/25.jpg);"></a>
-                        <a href="img/gallery_05/26.jpg" class="gallery__item" style="background-image: url(img/gallery_05/26.jpg);"></a>
-                        <a href="img/gallery_05/27.jpg" class="gallery__item" style="background-image: url(img/gallery_05/27.jpg);"></a>
-                        <a href="img/gallery_05/28.jpg" class="gallery__item" style="background-image: url(img/gallery_05/28.jpg);"></a>
-                        <a href="img/gallery_05/29.jpg" class="gallery__item" style="background-image: url(img/gallery_05/29.jpg);"></a>
-                        <a href="img/gallery_05/30.jpg" class="gallery__item" style="background-image: url(img/gallery_05/30.jpg);"></a>
-                        <a href="img/gallery_05/31.jpg" class="gallery__item" style="background-image: url(img/gallery_05/31.jpg);"></a>
-                        <a href="img/gallery_05/32.jpg" class="gallery__item" style="background-image: url(img/gallery_05/32.jpg);"></a>
-                        <a href="img/gallery_05/33.jpg" class="gallery__item" style="background-image: url(img/gallery_05/33.jpg);"></a>
-                        <a href="img/gallery_05/34.jpg" class="gallery__item" style="background-image: url(img/gallery_05/34.jpg);"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="blueimp-gallery" class="blueimp-gallery  blueimp-gallery-controls">
-        <div class="slides"></div>
-        <h3 class="title"></h3>
-        <a class="prev">‹</a>
-        <a class="next">›</a>
-        <a class="close">×</a>
-        <a class="play-pause"></a>
-        <ol class="indicator"></ol>
-    </div>
-
-    <div class="footer">
-        <div class="container">
-            <div class="footer__row">
-                <h2 class="footer__title -nomargin-top line">Контакты</h2>
-
-                <div class="footer__nav">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="" class="footer__link -white">Главная</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">О Mr.Grek</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">О косметике</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">Галерея</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">Видеогалерея</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">Контакты</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">Услуги</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">Наша команда</a></li>
-                        <li class="footer__item"><a href="" class="footer__link -white">Новости</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__contact">
-                    <div class="footer__contact-list">
-                        <div class="footer__contact-item">
-                            <span class="footer__contact-caption">Телефон:</span>
-                            <a href="tel:+78129331700" class="footer__contact-link -white">+7 812 933 17 00</a>
-                        </div>
-
-                        <div class="footer__contact-item">
-                            <span class="footer__contact-caption">Адрес:</span>
-                            <span class="footer__contact-link">Кораблестроителей д.14, Park inn by Radisson</span>
-                        </div>
-
-                        <div class="footer__contact-item">
-                            <span class="footer__contact-caption">Почта:</span>
-                            <a href="mailto:info@mrgrek.com" class="footer__contact-link -white">info@mrgrek.com</a>
-                        </div>
-
-                        <div class="footer__contact-item">
-                            <span class="footer__contact-caption">Мы в:</span>
-                            <a href="https://www.instagram.com/mister.grek/" class="footer__contact-link footer__contact-link--social">instagram</a> /
-                            <a href="https://vk.com/mister.grek" class="footer__contact-link footer__contact-link--social">vk.com</a> /
-                            <a href="https://www.facebook.com/mistergrek/" class="footer__contact-link footer__contact-link--social">facebook</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer__made">Сайт разработан компанией <a href="http://borodaboroda.com/" class="footer__made-link -gray" target="_blank">BORODA</a></div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter35659150 = new Ya.Metrika({
-                    id:35659150,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-
-<script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
-
 </body>
 </html>
