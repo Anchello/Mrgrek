@@ -1,0 +1,1 @@
+!function(n,e){var d=function(){var e=n(window).width();n.nav(),n.startscreen(),n.gmap(),n.carousel(),n.modal(),n.tabs(),e>767&&n.sliders()};n(document).ready(function(){n(".sender").fadeOut(6e3)}),n(document).on("DOMContentLoaded",d)}(jQuery,jQuery(window));

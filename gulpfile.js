@@ -34,7 +34,7 @@ gulp.task('build', function(){
     .pipe(cleanss())
     // .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./build/css'));
-  gulp.src('./src/*.*')
+  gulp.src('./src/*.html')
     .pipe(gulp.dest('./build/'));
   gulp.src('./src/fonts/**/*.*')
       .pipe(gulp.dest('./build/fonts'));
