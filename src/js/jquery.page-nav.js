@@ -20,13 +20,17 @@
                     $(this).addClass( 'page-nav__link--current' );
                 }
 
-                if ( link_top > 903 && link_top < 2160 || link_top > 3170 && link_top < 4235 || link_top > 4970) {
+                if ( link_top > 903 && link_top < 2160 || link_top > 3170 && link_top < 4605 || link_top > 5300) {
                     $(this).addClass( 'link-black' );
 
                 } else {
                     $(this).removeClass( 'link-black' );
                 }
             });
+
+            // console.log(  $( '.page-nav__link--current'  ).offset().top );
         });
     })
 }( jQuery, jQuery( window ) ));
+
+

@@ -1,17 +1,17 @@
 (function( $, g ) {
-    var Service = function() {
-        this.service = $( '.service-tab' );
-        this.buttons = $( '.service__nav-item' );
-        this.wrapper = $( '.service__wrapper' );
-        this.sliders = $( '.service__slider-item' );
+    var Sliders = function() {
+        this.service = $( '.sliders' );
+        this.buttons = $( '.slider__nav' );
+        this.wrapper = $( '.slider__wrapper' );
+        this.sliders = $( '.slider' );
 
         this.defaults = {
-            current_button: 'service__nav-item--current',
-            current_slider: 'service__slider-item--current'
+            current_button: 'slider__nav--current',
+            current_slider: 'slider--current'
         };
     };
 
-    Service.prototype = {
+    Sliders.prototype = {
         init: function() {
             var context = this,
                 screen_width = g.width(),
@@ -28,7 +28,9 @@
                     });
 
                     g.on('resize', function() {
-                        context.render.call( context );
+                        setTimeout(function() {
+                            context.render.call( context );
+                        }, 300);
                     });
 
                     this.buttons.on('click', function() {
@@ -58,6 +60,8 @@
         resizeWrapper: function() {
             var defaults = this.defaults,
                 current_slider = $( '.' + defaults.current_slider );
+
+            this.sliders.css( 'position', 'absolute' );
 
             this.wrapper.css( 'height', current_slider.outerHeight() );
         },
@@ -89,7 +93,7 @@
 
         eventMenuChange: function( button ) {
             var slider_id = button.data( 'tabs' ),
-                slider = $( '.service__slider-item--' + slider_id ),
+                slider = $( '.slider--' + slider_id ),
                 defaults = this.defaults,
                 current_button = $( '.' + defaults.current_button ),
                 current_slider = $( '.' + defaults.current_slider ),
@@ -109,7 +113,7 @@
         }
     };
 
-    $.service_tab = function() {
-        return new Service().init();
+    $.sliders = function() {
+        return new Sliders().init();
     };
 }( jQuery, jQuery( window ) ));

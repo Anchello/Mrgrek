@@ -2,6 +2,7 @@
     var Tabs = function() {
         this.other = $( '.other' );
         this.team = $( '.team' );
+        this.wedding = $( '.startscreen__weddings' );
         this.tab = $( '.tab' );
         this.wrapper = $( '.tab__wrapper' );
         this.items = $( '.tab__article' );
@@ -17,6 +18,7 @@
         init: function() {
             var context = this,
                 defaults = this.defaults,
+                offset = g.width(),
                 first_tab = $( this.tab[ this.index ] ),
                 first_item = $( this.items[ this.index ] );
 
@@ -33,14 +35,26 @@
                     });
 
                     g.on('load', function() {
-                        setTimeout(function() {
-                            context.render.call( context );
+                        setTimeout(function () {
+                            if ( (context.team && context.team.length > 0) || (context.other && context.other.length > 0) ) {
+                                if (offset > 767) {
+                                        context.render.call(context);
+                                }
+                            } else {
+                                    context.render.call(context);
+                            }
                         }, 300);
                     });
 
                     g.on('resize', function() {
-                        setTimeout(function() {
-                            context.render.call( context );
+                        setTimeout(function () {
+                            if ( (context.team && context.team.length > 0) || (context.other && context.other.length > 0) ) {
+                                if (offset > 767) {
+                                    context.render.call(context);
+                                }
+                            } else {
+                                context.render.call(context);
+                            }
                         }, 300);
                     });
 
@@ -60,44 +74,26 @@
                 defaults = this.defaults,
                 offset = g.width();
 
-            if ( (this.team && this.team.length > 0) || (this.other && this.other.length > 0) ) {
-                if ( offset > 767 ) {
-                    this.items.each(function( index, item ) {
-                        item = $( item );
+            this.items.each(function( index, item ) {
+                item = $( item );
 
-                        if ( item.hasClass( defaults.items_cls ) ) {
-                            prevoius = false;
-                        } else if ( prevoius ) {
-                            context.setTranslateX( item, ( - offset ) );
-                        } else {
-                            context.setTranslateX( item, ( offset * 2 ) );
-                        }
-                    });
-
-                    this.resizeWrapper();
-
-                    console.log(this.index);
+                if ( item.hasClass( defaults.items_cls ) ) {
+                    prevoius = false;
+                } else if ( prevoius ) {
+                    context.setTranslateX( item, ( - offset ) );
+                } else {
+                    context.setTranslateX( item, ( offset * 2 ) );
                 }
-            } else {
-                this.items.each(function( index, item ) {
-                    item = $( item );
+            });
 
-                    if ( item.hasClass( defaults.items_cls ) ) {
-                        prevoius = false;
-                    } else if ( prevoius ) {
-                        context.setTranslateX( item, ( - offset ) );
-                    } else {
-                        context.setTranslateX( item, ( offset * 2 ) );
-                    }
-                });
-
-                this.resizeWrapper();
-            }
+            this.resizeWrapper();
         },
 
         resizeWrapper: function() {
             var defaults = this.defaults,
                 current_tab = $( '.' + defaults.items_cls );
+
+            this.items.css( 'position', 'absolute' );
 
             this.wrapper.css( 'height', current_tab.outerHeight() );
         },
@@ -156,14 +152,15 @@
 
             if ( this.other && this.other.length > 0 ) {
                 if ( this.index === 1 ) {
-                    this.other.addClass( 'other--shoes' );
-                    this.other.removeClass ( 'other--auto' );
+                    this.other.css( 'background-image', 'url(img/other_bg2.jpg)' );
                 } else if ( this.index === 2 ) {
-                    this.other.addClass( 'other--auto' );
-                    this.other.removeClass ( 'other--shoes' );
+                    this.other.css( 'background-image', 'url(img/other_bg3.jpg)' );
+                    // this.other.addClass( 'other--auto' );
+                    // this.other.removeClass ( 'other--shoes' );
                 } else {
-                    this.other.removeClass ( 'other--shoes' );
-                    this.other.removeClass ( 'other--auto' );
+                    this.other.css( 'background-image', 'url(img/other_bg1.jpg)' );
+                    // this.other.removeClass ( 'other--shoes' );
+                    // this.other.removeClass ( 'other--auto' );
                 }
             };
         },

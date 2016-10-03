@@ -55,7 +55,7 @@
     <script src="js/jquery.map.js"></script>
     <script src="js/jquery.startscreen.js"></script>
     <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.service_tab.js"></script>
+    <script src="js/jquery.sliders.js"></script>
     <script src="js/jquery.tabs.js"></script>
     <script src="js/jquery.carousel.js"></script>
     <script src="js/jquery.modal.js"></script>
@@ -65,31 +65,6 @@
 </head>
 <body>
 <div class="page__wrapper">
-    <div class="modal-overlay">
-        <div class="modal-overlay__substrate"></div>
-
-        <div class="modal modal--callback">
-        <span class="modal__close">Закрыть
-            <i class="material-icons">clear</i>
-        </span>
-
-            <div class="modal__wrapper">
-                <img class="modal__logo" src="svg/logo_black.svg">
-
-                <p class="modal__subtitle -nomargin">Отправьте заявку и наш администратор свяжется с вами в ближайшее!</p>
-
-                <form class="modal__form ajax-form" action="">
-                    <input type="text" class="textfield" name="name" placeholder="Ваше имя">
-
-
-                    <input type="tel" class="textfield" name="tel" placeholder="Ваш телефон">
-
-                    <button type="submit" class="button">Отправить</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
     <div class="mobile-menu__close">
         <span class="icon icon--arrow-back" ></span>
     </div>
@@ -97,29 +72,35 @@
     <div class="mobile-menu">
         <nav class="mobile-nav">
             <div class="container">
-                <ul class="mobile-nav__sublist">
-                    <li class="mobile-nav__subitem mobile-nav__subitem--back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                <ul class="mobile-nav__sublist mobile-nav__sublist--more">
+                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
                     <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
                     <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
                     <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
                     <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
                     <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
                     <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
+                </ul>
+
+                <ul class="mobile-nav__sublist mobile-nav__sublist--service">
+                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                    <li class="mobile-nav__subitem"><a href="service.html" class="mobile-nav__subitem-link">Наши услуги</a></li>
                     <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
                     <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
+                    <li class="mobile-nav__subitem"><a href="gift.html" class="mobile-nav__subitem-link">Подарки</a></li>
                 </ul>
 
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
-                    <li class="mobile-nav__item mobile-nav__item--more">
-                        <a class="mobile-nav__link mobile-nav__link--more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__next" data-sublist="more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
                     </li>
                     <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
-                    <li class="mobile-nav__item"><a href="service.html" class="mobile-nav__link">Услуги</a></li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__next" data-sublist="service">Услуги<span class="icon icon--arrow-right"></span></a>
+                    </li>
                     <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
                 </ul>
-
-
             </div>
         </nav>
 
@@ -130,15 +111,14 @@
                 <!--<span class="contact__address">Петровская наб., д. 15</span>-->
             </div>
         </div>
-
     </div>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__row">
                 <div class="header__logo">
                     <a href="index.html" class="main-logo">
-                        <img src="svg/logo_white.svg">
+                        <img src="svg/logo_white.svg" alt="логотип">
                     </a>
                 </div>
 
@@ -146,23 +126,29 @@
                     <ul class="header-nav__list">
                         <li class="header-nav__item"><a href="index.html" class="header-nav__link">Главная</a></li>
                         <li class="header-nav__item header-nav__item--more">
-                            <a class="header-nav__link">О Mr.Grek
-                                <span class="icon icon--arrow"></span>
-                            </a>
+                            <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
 
-                            <ul class="header-nav__list header-nav__list--sub">
+                            <ul class="header-nav__sublist header-nav__sublist--more">
                                 <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
                                 <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
                                 <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
                                 <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
                                 <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
                                 <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
-                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
-                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
                             </ul>
                         </li>
                         <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
-                        <li class="header-nav__item"><a href="service.html" class="header-nav__link">Услуги</a></li>
+                        <li class="header-nav__item header-nav__item--more">
+                            <a class="header-nav__link">Услуги<span class="icon icon--arrow"></span></a>
+
+                            <ul class="header-nav__sublist header-nav__sublist--service">
+                                <li class="header-nav__subitem"><a href="service.html" class="header-nav__subitem-link">Наши услуги</a></li>
+                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
+                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
+                                <li class="header-nav__subitem"><a href="gift.html" class="header-nav__subitem-link">Подарки</a></li>
+                            </ul>
+
+                        </li>
                         <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
                     </ul>
                 </nav>
@@ -180,49 +166,67 @@
         </div>
     </header>
 
-    <section class="news service-tab" style="background-image: url(img/service-main_bg.jpg)">
+    <section class="news sliders" style="background-image: url(img/service-main_bg.jpg)">
         <div class="container">
             <div class="news__row">
                 <h2 class="news__title -nomargin-top line">Новости и статьи</h2>
 
                 <div class="news__nav">
                     <ul class="news__nav-list">
-                        <li class="news__nav-item service__nav-item" data-tabs="10"><a class="news__nav-link service__nav-link -black">Конкурс с рестораном Маймун от GINZA PROJECT</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="09"><a class="news__nav-link service__nav-link -black">Ручная экспресс чистка обуви в подарок!</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="08"><a class="news__nav-link service__nav-link -black">19 мая празднуем свой маленький юбилей</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="07"><a class="news__nav-link service__nav-link -black">Деловой Петербург о нас</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="06"><a class="news__nav-link service__nav-link -black">Здесь бреют по-королевски!</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="05"><a class="news__nav-link service__nav-link -black">О нас пишут</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="04"><a class="news__nav-link service__nav-link -black">Новая услуга</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="03"><a class="news__nav-link service__nav-link -black">Розыгрыш Apple watch!</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="02"><a class="news__nav-link service__nav-link -black">Чистка обуви</a></li>
-                        <li class="news__nav-item service__nav-item" data-tabs="01"><a class="news__nav-link service__nav-link -black">Мы открылись</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="11"><a class="news__nav-link service__nav-link -black">Конкурс с «Private Travel Club»</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="10"><a class="news__nav-link service__nav-link -black">Конкурс с GINZA PROJECT</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="09"><a class="news__nav-link service__nav-link -black">Ручная чистка обуви в подарок!</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="08"><a class="news__nav-link service__nav-link -black">Юбилей</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="07"><a class="news__nav-link service__nav-link -black">Деловой Петербург о нас</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="06"><a class="news__nav-link service__nav-link -black">Здесь бреют по-королевски!</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="05"><a class="news__nav-link service__nav-link -black">О нас пишут</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="04"><a class="news__nav-link service__nav-link -black">Новая услуга</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="03"><a class="news__nav-link service__nav-link -black">Розыгрыш Apple watch!</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="02"><a class="news__nav-link service__nav-link -black">Чистка обуви</a></li>
+                        <li class="news__nav-item slider__nav" data-tabs="01"><a class="news__nav-link service__nav-link -black">Мы открылись</a></li>
 
                     </ul>
                 </div>
 
-                <div class="news__slider service__wrapper">
-                    <div class="news__slider-item service__slider-item service__slider-item--10">
+                <div class="news__slider slider__wrapper">
+                    <div class="news__slider-item slider slider--11">
+                        <div class="news__data"><time datetime="2016-09-30">30.09.2016</time></div>
+
+                        <h3 class="news__subtitle">Конкурс с туристическим клубом «Private Travel Club»</h3>
+
+                        <div class="news__content">
+                            <p>Джентльмен, щеголяй под солнцем с умом! Выкладывай в Instagram до 30 ноября селфи с заграничных курортов, отмечай на фото закрытый туристический клуб «Private Travel Club» и мужское пространство «Mr. Grek»! Автор самой экзотичной локации и красивой бороды получит сертификат на любую услугу от Мистер Грек и сертификат на покупку тура - 10 000 рублей от «Private Travel Club»! Обязательно подпишись на наши аккаунты  и участвуй в розыгрыше! Итоги розыгрыша 01 декабря.</p>
+                            <p>
+                                <a href="https://www.instagram.com/private_travel_club_ltd/" target="_blank">@private_travel_club_ltd</a>
+                            </p>
+                            <p>
+                                <a href="https://www.instagram.com/mister.grek/" target="_blank">@mister.grek</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="news__slider-item slider slider--10">
                             <div class="news__data"><time datetime="2016-07-15">15.07.2016</time></div>
 
                             <h3 class="news__subtitle">Конкурс с рестораном Маймун от GINZA PROJECT</h3>
 
                             <div class="news__content">
-                                <p>Дарим подарочные сертификаты на 3000, 1500 и 1000 рублей! Ресторан «Маймун» совместно с мужским пространством Mr. Grek проводят конкурс «Мистер Маймун» на самую стильную бороду</p>
+                                <p>Дарим подарочные сертификаты на 3000, 1500 и 1000 рублей! Ресторан «Маймун» совместно с мужским пространством Mr. Grek проводят конкурс «Мистер Маймун» на самую стильную бороду! 💣💣💣 До 30 июля выложите бородатое селфи с локацией ресторана «Маймун» или мужского пространства Mr. Grek (на время проведения акции профиль должен быть открыт) с хештегом #мистермаймун. А также не забудьте подписаться на аккаунты @mister.grek и @ginzaprojectspb. Победитель станет обладателем сертификата в наш ресторан на сумму 3000 рублей, а также получит сертификат на 3000 рублей в Mr. Grek. Занявшим 2-е и 3-е мы подарим сертификаты на 1500 и 1000 рублей и выгодную скидку в размере 30% на посещение салона Mr. Grek. Итоги — 1 августа в нашем instagram в комментарии к этому посту. Участвуйте и побеждайте в конкурсе для настоящих мужчин!</p>
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--09">
+                    <div class="news__slider-item slider slider--09">
                             <div class="news__data"><time datetime="2016-06-01">01.06.2016</time></div>
 
                             <h3 class="news__subtitle">Ручная экспресс чистка обуви в подарок!</h3>
 
                             <div class="news__content">
-                                <p>Добрый день, джентльмены! У нас для Вас замечательная новость! С 1 июня по 1 июля 2016 года всем Гостям, записавшимся к нам на услуги, мы предоставляем "ручную экспресс чистку обуви" в подарок!</p>
+                                <p>Добрый день, джентльмены! У нас для Вас замечательная новость! С 1 июня по 1 июля 2016 года всем Гостям, записавшимся к нам на услуги, мы предоставляем "ручную экспресс чистку обуви" в подарок! Наш профессиональный бутблэкер не оставит Вас равнодушными и Ваша обувь будет благодарна!</p>
+                                <img class="news__img" src="img/news_02.jpg" alt="Ручная экспресс чистка обуви">
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--08">
+                    <div class="news__slider-item slider slider--08">
                             <div class="news__data"><time datetime="2016-05-13">13.05.2016</time></div>
 
                             <h3 class="news__subtitle">19 мая празднуем свой маленький юбилей</h3>
@@ -232,37 +236,40 @@
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--07">
-                            <div class="news__data"><time datetime="2016-29-04">29.04.2016</time></div>
+                    <div class="news__slider-item slider slider--07">
+                            <div class="news__data"><time datetime="2016-04-29">29.04.2016</time></div>
 
                             <h3 class="news__subtitle">Деловой Петербург о нас</h3>
 
                             <div class="news__content">
-                                <p>Предприниматели Мария и Михаил Грек на волне моды на бороду решили открыть премиальную мужскую парикмахерскую, отстроившись от салонов, предоставляющих услуги для хипстеров.</p>
+                                <p>Супруги Михаил и Мария Грек, бывший финансовый директор строительного холдинга и флорист, до того как глава семьи отпустил бороду, даже не думали, что ее подровнять — это проблема в Петербурге. После того как несколько раз столкнулись с обслуживанием в течение 2 часов, проблемами с парковкой и обилием парикмахерских для хипстеров, к которым Михаил Грек себя явно не причислял, будущие предприниматели разглядели свободную нишу для нового бизнеса. После долгих поисков подходящего помещения супруги открыли мужское пространство в гостинице Park inn by Radisson "Прибалтийская". Там небезразличные к своему внешнему виду мужчины могут сделать стрижку, маникюр, педикюр, моделирование бороды.</p>
+                                <a href="http://www.dp.ru/a/2016/04/27/Biznes_na_borodachah_rasti/" target="_blank">Читать полную версию в "Деловом Петербурге"</a>
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--06">
+                    <div class="news__slider-item slider slider--06">
                             <div class="news__data"><time datetime="2016-04-22">22.04.2016</time></div>
 
                             <h3 class="news__subtitle">Здесь бреют по-королевски!</h3>
 
                             <div class="news__content">
-                                <p>Доброго времени суток, джентльмены! У нас для Вас замечательная новость! Вчера наши мастера прошли аттестацию в Привилегированном клубе Английского Королевского Бритья от Truefitt&Hill.</p>
+                                <p>Доброго времени суток, джентльмены! У нас для Вас замечательная новость! Вчера наши мастера прошли аттестацию в Привилегированном клубе Английского Королевского Бритья от Truefitt&Hill. Наше мужское пространство первое в Петербурге обладает такой высшей похвалой от тренера школы бритья Игоря Груздева! Выбирая «Королевское бритье» в нашем мужском пространстве, Вы можете быть уверены в том, что перед Вами услуга несравненного качества, рожденная королевскими традициями и проверенная временем!</p>
+                                <img class="news__img" src="img/news_01.jpg" alt="Здесь бреют по-королевски">
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--05">
+                    <div class="news__slider-item slider slider--05">
                             <div class="news__data"><time datetime="2016-03-05">05.03.2016</time></div>
 
                             <h3 class="news__subtitle">О нас пишут</h3>
 
                             <div class="news__content">
-                                <p>Джентельмены! Читайте о нашем мужском пространстве Mr. Grek в апрельcком выпуске журнала Собака.ru и на сайте журнала в разделе "мода и красота".</p>
+                                <p>Джентельмены! Читайте о нашем мужском пространстве Mr. Grek в апрельcком выпуске журнала
+                                    <a href="http://www.sobaka.ru/fashion/beauty/45279" target="_blank">Собака.ru</a> и на сайте журнала в разделе "мода и красота".</p>
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--04">
+                    <div class="news__slider-item slider slider--04">
                             <div class="news__data"><time datetime="2016-03-24">24.03.2016</time></div>
 
                             <h3 class="news__subtitle">Новая услуга</h3>
@@ -272,7 +279,7 @@
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--03">
+                    <div class="news__slider-item slider slider--03">
                             <div class="news__data"><time datetime="2016-03-09">09.03.16</time></div>
 
                             <h3 class="news__subtitle">Розыгрыш Apple watch!</h3>
@@ -293,7 +300,7 @@
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--02">
+                    <div class="news__slider-item slider slider--02">
                             <div class="news__data"><time datetime="2016-02-20">20.02.2016</time></div>
 
                             <h3 class="news__subtitle">Чистка обуви</h3>
@@ -311,13 +318,14 @@
                             </div>
                     </div>
 
-                    <div class="news__slider-item service__slider-item service__slider-item--01">
+                    <div class="news__slider-item slider slider--01">
                             <div class="news__data"><time datetime="2016-02-19">19.02.2016</time></div>
 
                             <h3 class="news__subtitle">Мы открылись</h3>
 
                             <div class="news__content">
                                 <p>Мужское пространство Mr.Grek открыл свои двери 19 февраля! Это не просто спа-салон для мужчин, а настоящая мужская территория, где наши гости могут и заботиться о своей внешности, отдыхать, общаться, и параллельно делать ряд полезных вещей. Например, пообедать перед поездкой в офис, заказать мойку машины или чистку обуви. Только лучшие мастера, лучшая косметика и средства по уходу – мы собрали в одном месте всё, что необходимо современному, активному, успешному мужчине. Становитесь нашим клиентом, будьте модными и почувствуйте настоящий комфорт и удовольствие от каждой процедуры!</p>
+                                <iframe style="max-width: 400px; margin-top: 30px;" width="100%" height="315" src="https://www.youtube.com/embed/_mUqVRXQ9nw" frameborder="0" allowfullscreen></iframe>
                             </div>
                     </div>
                 </div>
@@ -370,13 +378,41 @@
                     </div>
                 </div>
 
-                <div class="footer__made">Сайт разработан компанией <a href="borodaboroda.com" class="footer__made-link -gray" target="_blank">BORODA</a></div>
+                <div class="footer__made">Сайт разработан компанией <a href="http://borodaboroda.com/" class="footer__made-link -gray" target="_blank">BORODA</a></div>
             </div>
         </div>
-
     </div>
-
 </div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35659150 = new Ya.Metrika({
+                    id:35659150,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
 </body>

@@ -1,12 +1,12 @@
 (function( $, g ) {
     var Carousel = function() {
         this.news = $( '.news-section' );
-        this.carousel = $( '.news-slider' );
-        this.items = $( '.news-slider__item' );
+        this.carousel = $( '.news-carousel' );
+        this.items = $( '.news-carousel__item' );
         // this.items = el;
         // this.nav = $( '.carousel-nav' );
-        this.prev_button =  $( '.news-slider__btn--prev' );
-        this.next_button = $( '.news-slider__btn--next' );
+        this.prev_button =  $( '.news-carousel__btn--prev' );
+        this.next_button = $( '.news-carousel__btn--next' );
         this.indexes = {
             current: 0,
             count: this.items.length,
@@ -15,7 +15,7 @@
         };
 
         this.defaults = {
-            current_cls: 'news-slider__item--current'
+            current_cls: 'news-carousel__item--current'
         };
     };
 
@@ -68,6 +68,8 @@
 
         render: function() {
             var item_height = this.items.outerHeight ();
+
+            this.items.css( 'position', 'absolute' );
 
             this.carousel.css( 'height', item_height );
 

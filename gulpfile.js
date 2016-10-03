@@ -34,14 +34,18 @@ gulp.task('build', function(){
     .pipe(cleanss())
     // .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./build/css'));
-  gulp.src('./src/*.html')
+  gulp.src('./src/*.*')
     .pipe(gulp.dest('./build/'));
+  gulp.src('./src/fonts/**/*.*')
+      .pipe(gulp.dest('./build/fonts'));
+  gulp.src('./src/icons/**/*.*')
+    .pipe(gulp.dest('./build/icons'));
   gulp.src('./src/img/**/*.*')
-    .pipe(gulp.dest('./build/img'));
+      .pipe(gulp.dest('./build/img'));
   gulp.src('./src/js/**/*.*')
     .pipe(uglify())
     .pipe(gulp.dest('./build/js'));
-  gulp.src('./src/svg/*.svg')
+  gulp.src('./src/svg/*.*')
     .pipe(gulp.dest('./build/svg'));
 });
 

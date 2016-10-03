@@ -21,6 +21,10 @@
     .col-offset(lg, 2);
     text-align: center;
     margin-bottom: 64px;
+
+    @media all and (max-width: (@screen-md - 1)) {
+      margin-bottom: 20px;
+    }
   }
 
   &__row {
@@ -63,7 +67,7 @@
     .col (md, 9);
     .col-offset(md, 0);
     .col (lg, 9);
-    //.col (xxl, 5);
+    min-height: 710px;
   }
 
   &__slider-item {

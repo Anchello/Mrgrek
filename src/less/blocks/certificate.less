@@ -1,0 +1,99 @@
+.certificate {
+  background: linear-gradient(to left, rgba(255,255,255,0.07) 0%, rgba(1,0,0,0.07) 100%);
+  padding: 80px 0 94px;
+  position: relative;
+
+  &::before {
+    .hidden-down(lg);
+    content: '';
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-attachment: fixed;
+    position: absolute;
+    background-image: url(../img/cards_01.png);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  &__row {
+    .row;
+  }
+
+  &__title {
+    .col (xs, 12);
+    text-align: center;
+    margin-bottom: 120px;
+  }
+
+  &__info {
+    .col (xs, 12);
+    .col (md, 8);
+    .col-offset(md, 2);
+    .col (xl, 4);
+    .col-offset(xl, 0);
+
+    &--cards {
+      .col (md, 8);
+      .col-offset(md, 2);
+      .col (xl, 5);
+      .col-offset(xl, 0);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 60px;
+  }
+
+  &__form {
+    margin-top: 60px;
+
+    &--cards {
+      width: 382px;
+    }
+
+    @media all and (max-width: @screen-md) and (min-width: @screen-sm) {
+      width: 382px;
+      margin: auto;
+    }
+
+    @media all and (max-width: @screen-sm) {
+      width: 100%;
+    }
+
+    .button {
+      width: 100%;
+    }
+  }
+
+  .textfield,
+  .select {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  &--cards {
+    background: @white;
+    padding: 80px 0 94px;
+    position: relative;
+
+    &::before {
+      .hidden-down(lg);
+      content: '';
+      height: 100%;
+      width: 100%;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      background-attachment: fixed;
+      position: absolute;
+      background-image: url(../img/cards_02.png);
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+  }
+}

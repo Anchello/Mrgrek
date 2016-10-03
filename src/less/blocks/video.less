@@ -21,6 +21,10 @@
     .col-offset(lg, 2);
     text-align: center;
     margin-bottom: 64px;
+
+    @media all and (max-width: (@screen-md - 1)) {
+      margin-bottom: 20px;
+    }
   }
 
   &__row {
@@ -71,9 +75,6 @@
     background: @white;
     width: 100%;
     position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
     min-height: 510px;
 
     @media all and (max-width: @screen-lg) {

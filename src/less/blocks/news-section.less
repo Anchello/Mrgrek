@@ -1,8 +1,18 @@
 .news-section {
+  position: relative;
+
   &__title {
     text-align: center;
     color: @white;
     text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -38px;
+
+    @media all and (max-width: @screen-md) {
+      top: -25px;
+    }
   }
 
   &__wrapper {

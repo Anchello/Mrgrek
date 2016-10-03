@@ -61,7 +61,7 @@
     <script src="js/jquery.map.js"></script>
     <script src="js/jquery.startscreen.js"></script>
     <script src="js/jquery.nav.js"></script>
-    <script src="js/jquery.service_tab.js"></script>
+    <script src="js/jquery.sliders.js"></script>
     <script src="js/jquery.tabs.js"></script>
     <script src="js/jquery.modal.js"></script>
     <script src="js/jquery.carousel.js"></script>
@@ -71,6 +71,11 @@
 
 </head>
 <body>
+
+<?php
+include ('sender.php');
+?>
+
 <div class="page__wrapper">
 
     <!--<div class="page-nav">-->
@@ -93,17 +98,17 @@
         </span>
 
             <div class="modal__wrapper">
-                <img class="modal__logo" src="svg/logo_black.svg">
+                <img class="modal__logo" src="svg/logo_black.svg" alt="логотип">
 
                 <p class="modal__text -nomargin">Отправьте заявку и наш администратор свяжется с вами в ближайшее!</p>
 
-                <form class="modal__form ajax-form" action="">
-                    <input type="text" class="textfield" name="name" placeholder="Ваше имя">
+                <form class="modal__form validate" action="" method="post">
+                    <input type="text" class="textfield" name="name" placeholder="Ваше имя" required>
 
 
-                    <input type="tel" class="textfield" name="tel" placeholder="Ваш телефон">
+                    <input type="tel" class="textfield" name="tel" placeholder="Ваш телефон" required>
 
-                    <button type="submit" class="button">Отправить</button>
+                    <button type="submit" class="button" name="modal_button">Отправить</button>
                 </form>
             </div>
         </div>
@@ -116,29 +121,35 @@
     <div class="mobile-menu">
         <nav class="mobile-nav">
             <div class="container">
-                <ul class="mobile-nav__sublist">
-                    <li class="mobile-nav__subitem mobile-nav__subitem--back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                <ul class="mobile-nav__sublist mobile-nav__sublist--more">
+                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
                     <li class="mobile-nav__subitem"><a href="about.html" class="mobile-nav__subitem-link">О проекте</a></li>
                     <li class="mobile-nav__subitem"><a href="cosmetics.html" class="mobile-nav__subitem-link">О косметике</a></li>
                     <li class="mobile-nav__subitem"><a href="gallery.html" class="mobile-nav__subitem-link">Галерея</a></li>
                     <li class="mobile-nav__subitem"><a href="video.html" class="mobile-nav__subitem-link">Видеогалеря</a></li>
                     <li class="mobile-nav__subitem"><a href="news.html" class="mobile-nav__subitem-link">Новости</a></li>
                     <li class="mobile-nav__subitem"><a href="reviews.html" class="mobile-nav__subitem-link">Отзывы</a></li>
+                </ul>
+
+                <ul class="mobile-nav__sublist mobile-nav__sublist--service">
+                    <li class="mobile-nav__subitem mobile-nav__back"><a class="mobile-nav__subitem-link"><span class="icon icon--arrow-left"></span>Назад</a></li>
+                    <li class="mobile-nav__subitem"><a href="service.html" class="mobile-nav__subitem-link">Наши услуги</a></li>
                     <li class="mobile-nav__subitem"><a href="weddings.html" class="mobile-nav__subitem-link">На свадьбу</a></li>
                     <li class="mobile-nav__subitem"><a href="kids.html" class="mobile-nav__subitem-link">Детям</a></li>
+                    <li class="mobile-nav__subitem"><a href="gift.html" class="mobile-nav__subitem-link">Подарки</a></li>
                 </ul>
 
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item"><a href="index.html" class="mobile-nav__link">Главная</a></li>
-                    <li class="mobile-nav__item mobile-nav__item--more">
-                        <a class="mobile-nav__link mobile-nav__link--more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__next" data-sublist="more">О Mr.Grek<span class="icon icon--arrow-right"></span></a>
                     </li>
                     <li class="mobile-nav__item"><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
-                    <li class="mobile-nav__item"><a href="service.html" class="mobile-nav__link">Услуги</a></li>
+                    <li class="mobile-nav__item">
+                        <a class="mobile-nav__link mobile-nav__next" data-sublist="service">Услуги<span class="icon icon--arrow-right"></span></a>
+                    </li>
                     <li class="mobile-nav__item"><a href="team.html" class="mobile-nav__link">Наша команда</a></li>
                 </ul>
-
-
             </div>
         </nav>
 
@@ -156,7 +167,7 @@
             <div class="header__row">
                 <div class="header__logo">
                     <a href="index.html" class="main-logo">
-                        <img src="svg/logo_white.svg">
+                        <img src="svg/logo_white.svg" alt="логотип">
                     </a>
                 </div>
 
@@ -166,19 +177,27 @@
                         <li class="header-nav__item header-nav__item--more">
                             <a class="header-nav__link">О Mr.Grek<span class="icon icon--arrow"></span></a>
 
-                            <ul class="header-nav__list header-nav__list--sub">
+                            <ul class="header-nav__sublist header-nav__sublist--more">
                                 <li class="header-nav__subitem"><a href="about.html" class="header-nav__subitem-link">О проекте</a></li>
                                 <li class="header-nav__subitem"><a href="cosmetics.html" class="header-nav__subitem-link">О косметике</a></li>
                                 <li class="header-nav__subitem"><a href="gallery.html" class="header-nav__subitem-link">Галерея</a></li>
                                 <li class="header-nav__subitem"><a href="video.html" class="header-nav__subitem-link">Видеогалеря</a></li>
                                 <li class="header-nav__subitem"><a href="news.html" class="header-nav__subitem-link">Новости</a></li>
                                 <li class="header-nav__subitem"><a href="reviews.html" class="header-nav__subitem-link">Отзывы</a></li>
-                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
-                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
                             </ul>
                         </li>
                         <li class="header-nav__item"><a href="contacts.html" class="header-nav__link">Контакты</a></li>
-                        <li class="header-nav__item"><a href="service.html" class="header-nav__link">Услуги</a></li>
+                        <li class="header-nav__item header-nav__item--more">
+                            <a class="header-nav__link">Услуги<span class="icon icon--arrow"></span></a>
+
+                            <ul class="header-nav__sublist header-nav__sublist--service">
+                                <li class="header-nav__subitem"><a href="service.html" class="header-nav__subitem-link">Наши услуги</a></li>
+                                <li class="header-nav__subitem"><a href="weddings.html" class="header-nav__subitem-link">На свадьбу</a></li>
+                                <li class="header-nav__subitem"><a href="kids.html" class="header-nav__subitem-link">Детям</a></li>
+                                <li class="header-nav__subitem"><a href="gift.html" class="header-nav__subitem-link">Подарки</a></li>
+                            </ul>
+
+                        </li>
                         <li class="header-nav__item"><a href="team.html" class="header-nav__link">Наша команда</a></li>
                     </ul>
                 </nav>
@@ -196,14 +215,15 @@
         </div>
     </header>
 
-    <div class="startscreen-weddings" style="background-image: url(img/kids_bg.jpg);">
+    <div class="startscreen" style="background-image: url(img/kids_bg.jpg);">
         <div class="container">
             <section class="promo">
                 <h1 class="promo__title line line--long">Сделаем яркую и модную стрижку<br>
                     для юного джентельмена за 1200 р</h1>
 
                 <div class="promo__text">Подстрижем, накормим и напоим.<br>
-                    От нас игрушка дла маленького джентельмена, в качестве комплимента</div>
+                    От нас игрушка дла маленького джентельмена,<br>
+                    в качестве комплимента</div>
 
                 <div class="promo__text promo__text--sm">Запиши юного джентельмена на стрижку</div>
 
@@ -220,9 +240,9 @@
         <div class="instagram__row">
             <h2 class="instagram__title line">Стрижки юных джентельменов</h2>
 
-            <iframe class="instagram__item instagram__item--lg" src="//lightwidget.com/widgets/df0034a8536c58369b66804cc25e4537.html" id="lightwidget_df0034a853" name="lightwidget_df0034a853"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+            <iframe class="instagram__item instagram__item--lg lightwidget-widget" src="//lightwidget.com/widgets/df0034a8536c58369b66804cc25e4537.html" id="lightwidget_df0034a853" name="lightwidget_df0034a853"  scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 
-            <iframe class="instagram__item instagram__item--xs" src="//lightwidget.com/widgets/10f63365c9c755afb37edd9cf451683c.html" id="lightwidget_10f63365c9" name="lightwidget_10f63365c9"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+            <iframe class="instagram__item instagram__item--xs lightwidget-widget" src="//lightwidget.com/widgets/e7aa3465cba45cbdb72d2b3de920df1c.html" id="lightwidget_e7aa3465cb" name="lightwidget_e7aa3465cb"  scrolling="no" allowtransparency="true" style="width: 100%; border: 0; overflow: hidden;"></iframe>
         </div>
     </div>
 
@@ -364,11 +384,11 @@
                     Напишите нам:
                 </div>
 
-                <form action="">
-                    <input type="text" class="textfield" name="name" placeholder="Имя">
-                    <input type="tel" class="textfield" name="tel" placeholder="Номер телефона">
-                    <input type="text" class="textfield" name="question" placeholder="Ваш вопрос">
-                    <button class="button" type="submit">Задать вопрос</button>
+                <form class="validate" action="" method="post">
+                    <input type="text" class="textfield" name="name" placeholder="Имя" required>
+                    <input type="tel" class="textfield" name="tel" placeholder="Номер телефона" required>
+                    <input type="text" class="textfield" name="question" placeholder="Ваш вопрос" required>
+                    <button class="button" type="submit" name="question_button">Задать вопрос</button>
                 </form>
             </div>
 
@@ -408,6 +428,36 @@
         </div>
     </div>
 </div>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter35659150 = new Ya.Metrika({
+                    id:35659150,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/35659150" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 
 <script type="text/javascript" src="//w15819.yclients.com/widgetJS" charset="UTF-8"></script>
 </body>

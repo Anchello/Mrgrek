@@ -1,8 +1,6 @@
 (function( $, global ) {
     var init = function() {
         var screen_width = $( window ).width();
-            // team = $( '.team' );
-            // other = $( '.other' );
 
         $.nav();
         $.startscreen();
@@ -13,9 +11,13 @@
         // $.preloader();
 
         if ( screen_width > 767) {
-            $.service_tab();
+            $.sliders();
         };
     };
+
+    $(document).ready(function(){
+        $(".sender").fadeOut(6000);
+    });
 
     $( document ).on( 'DOMContentLoaded', init );
     // $( window ).resize( init());

@@ -9,6 +9,10 @@
     .col (xs, 12);
     text-align: center;
     margin-bottom: 78px;
+
+    @media all and (max-width: (@screen-md - 1)) {
+      margin-bottom: 20px;
+    }
   }
 
   &__nav {
@@ -62,6 +66,10 @@
     //@media all and (max-width: @screen-sm) {
     //  padding: 0;
     //}
+  }
+
+  &__article {
+    padding: 0 10px;
   }
 
   &__subtitle {
