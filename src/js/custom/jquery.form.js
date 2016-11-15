@@ -16,11 +16,6 @@
                 length : 10
             });
         };
-
-        var tel = $( 'input[type="tel"]' );
-        if ( tel && tel.length > 0 ) {
-            tel.inputmask("+7 (999) 999-99-99");
-        }
     });
 
 } ( jQuery ));

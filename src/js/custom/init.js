@@ -8,7 +8,6 @@
         $.carousel();
         $.modal();
         $.tabs();
-        // $.preloader();
 
         if ( screen_width > 767) {
             $.sliders();
@@ -20,5 +19,4 @@
     });
 
     $( document ).on( 'DOMContentLoaded', init );
-    // $( window ).resize( init());
 }( jQuery, jQuery( window ) ));

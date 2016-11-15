@@ -52,16 +52,6 @@
 
                     return false;
                 });
-
-                // doc.on('keydown', function( e ) {
-                //     if( e.keyCode === 27 ) {
-                //         context.modalClose.call( context, $( '.' + defaults.modal_cls ) );
-                //
-                //         e.preventDefault();
-                //
-                //         return false;
-                //     }
-                // });
             }
         },
 

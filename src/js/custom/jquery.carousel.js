@@ -3,8 +3,6 @@
         this.news = $( '.news-section' );
         this.carousel = $( '.news-carousel' );
         this.items = $( '.news-carousel__item' );
-        // this.items = el;
-        // this.nav = $( '.carousel-nav' );
         this.prev_button =  $( '.news-carousel__btn--prev' );
         this.next_button = $( '.news-carousel__btn--next' );
         this.indexes = {
@@ -127,8 +125,6 @@
                     item.addClass(context.defaults.current_cls);
                 } else if ( index === context.indexes.prev ) {
                     context.setTranslateX( item, 0 );
-                // } else if ( index === context.indexes.next ) {
-                //     context.setTranslateX( item, ( offset * 2 ) );
                 } else if ( index > context.indexes.current ) {
                     context.setTranslateX( item, ( offset * 2 ) );
                 } else if ( index < context.indexes.prev ) {
@@ -155,16 +151,6 @@
                     }
                 });
             }
-
-            // if ( old_next && old_next.length > 0 ) {
-            //     this.animateTranslateX( old_next, ( offset * 2 ), ( offset * 2 ) );
-            // }
-            //
-            // if ( context.indexes.current === this.indexes.count - 2 ) {
-            //     old_next = $( this.items[ 0 ] );
-            //
-            //     this.animateTranslateX( old_next, ( offset * 2 ), ( offset * 2 ) );
-            // }
 
             this.animateTranslateX( current, 0, item_width );
             current.addClass(this.defaults.current_cls);
@@ -206,7 +192,6 @@
             current.addClass(this.defaults.current_cls);
             this.animateTranslateX( prev, item_width, 0 );
             prev.removeClass(this.defaults.current_cls);
-            // this.animateTranslateX( next, ( offset * 2 ), ( offset * 2 ) );
         },
 
         eventPrevSlide: function() {

@@ -161,7 +161,6 @@
                 button = $( button ),
                 target = button.attr( 'href' ),
                 base = $( 'base' ).attr( 'href' ),
-                // current_button = $( '.page-nav__link--current'  ),
                 current_page = location.pathname;
 
             if ( target.substr( 0, 1 ) !== '#' ) {

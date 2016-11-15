@@ -21,20 +21,6 @@
                 first_tab = $( this.tab[ this.index ] ),
                 first_item = $( this.items[ this.index ] );
 
-            // if ( this.startscreen && this.startscreen.length > 0 ) {
-            //     g.on('load', function() {
-            //         setTimeout(function() {
-            //             context.resizeSreen.call( context );
-            //         }, 300);
-            //     });
-            //
-            //     g.on('resize', function() {
-            //         setTimeout(function() {
-            //             context.resizeSreen.call( context );
-            //         }, 300);
-            //     });
-            // }
-
             if ( this.wedding && this.wedding.length > 0 ) {
                 first_tab.addClass( defaults.tabs_cls );
                 first_item.addClass( defaults.items_cls );
@@ -68,16 +54,6 @@
                 });
             }
         },
-
-        // resizeSreen: function() {
-        //     var promo = $( '.promo' ),
-        //         title = $( '.news-section__title' ),
-        //         height_startscreen = this.startscreen.outerHeight(),
-        //         height_header = header.outerHeight(),
-        //         height_title = title.outerHeight(),
-        //         screen_width = g.width(),
-        //         width = 100 + '%';
-        // },
 
         render: function() {
             var context = this,
