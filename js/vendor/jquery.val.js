@@ -1,1 +1,0 @@
-!function(e){e(document).ready(function(){e(".validate").validate({rules:{level:{required:!0}}})})}(jQuery);

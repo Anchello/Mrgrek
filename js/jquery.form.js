@@ -1,1 +1,0 @@
-!function(t){t(document).ready(function(){t(window).width()<="400"?t(".jRating").jRating({step:!0,rateMax:10,type:"small",length:10}):t(".jRating").jRating({step:!0,rateMax:10,type:"big",length:10});var n=t('input[type="tel"]');n&&n.length>0&&n.inputmask("+7 (999) 999-99-99")})}(jQuery);
